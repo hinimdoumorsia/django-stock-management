@@ -1,5 +1,17 @@
 # Gestion de Stock - Application Web Django
 
+
+#  Django Stock Management
+
+![Version](https://img.shields.io/badge/version-1.0.0-7c6af7?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-5.x-092E20?style=for-the-badge&logo=django&logoColor=white)
+![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-UI-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![License](https://img.shields.io/badge/Licence-MIT-green?style=for-the-badge)
+
 ## 1. Presentation de l'application
 
 Gestion de Stock est une application web complete developpee avec le framework Django. Elle permet aux entreprises et organisations de gerer efficacement leur inventaire de produits a travers une interface intuitive et securisee.
@@ -18,7 +30,7 @@ L'application couvre les besoins essentiels suivants :
 
 ## 2. Objectif et contexte du developpement
 
-Cette application a ete developpee dans le cadre de la formation **Genie Industriel - Intelligence Artificielle et Data Science** a **l'ENSAM-Meknes**, sous la supervision de **Pr Brahim BAKKAS**.
+Cette application a été développée dans le cadre d’un travaux pratiques à l’ENSAM-Meknès, sous la supervision du Pr Brahim BAKKAS.
 
 Elle repond a plusieurs besoins concrets :
 
@@ -250,6 +262,29 @@ Interface d'administration : http://127.0.0.1:8000/admin/
 
 ---
 
+## 🔐 Interface de connexion
+
+Une fois l'application lancée, vous pouvez accéder directement à l’interface suivante :
+
+### Champs de connexion
+- Nom d'utilisateur  
+- Mot de passe  
+
+![Interface de connexion](gestion_stock/image/interface_de_connexion.PNG)
+
+---
+
+##  Création de compte
+
+Dans le cas où vous n'avez pas de compte, vous pouvez accéder à la page de création de compte.
+
+###  Formulaire d'inscription
+
+<p align="center">
+  <img src="gestion_stock/image/formulaire_creation_compte.PNG" width="45%">
+  <img src="gestion_stock/image/suite_formulaire_compte.PNG" width="45%">
+</p>
+
 ## 8. Impact et potentiel du projet
 
 ### 8.1 Pour l'entreprise
@@ -279,12 +314,12 @@ Interface d'administration : http://127.0.0.1:8000/admin/
 ## 9. Contributeur
 
 **Morsia Guitdam Hinimdou**  
-Etudiant en Genie Industriel - IA & Data Science | ENSAM-Meknes
+Étudiant en génie de l’intelligence artificielle, des technologies des données et de leurs applications industrielles. | ENSAM-Meknes
 
 | Contact | Information |
 |---|---|
 | Email | hinimdoumorsia@gmail.com |
-| LinkedIn | Morsia Guitdam Hinimdou |
+| LinkedIn | [LinkedIn](https://www.linkedin.com/in/morsia-guitdam-hinimdou-266bb0269/) |
 | WhatsApp | +237 690 124 864 |
 | Portfolio | https://site-web-nodemailer.vercel.app |
 
