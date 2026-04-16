@@ -1,5 +1,19 @@
 # Gestion de Stock - Application Web Django
 
+
+<h1 style="text-align:center; margin-top:20px;">
+    <i class="fas fa-microchip"></i> Technologies utilisées
+</h1>
+
+<div style="text-align:center; margin-top:10px;">
+    <i class="fab fa-python"></i> Python &nbsp; | &nbsp;
+    <i class="fas fa-server"></i> Django &nbsp; | &nbsp;
+    <i class="fas fa-database"></i> SQLite &nbsp; | &nbsp;
+    <i class="fab fa-html5"></i> HTML &nbsp; | &nbsp;
+    <i class="fab fa-css3-alt"></i> CSS &nbsp; | &nbsp;
+    <i class="fab fa-bootstrap"></i> Bootstrap
+</div>
+
 ## 1. Presentation de l'application
 
 Gestion de Stock est une application web complete developpee avec le framework Django. Elle permet aux entreprises et organisations de gerer efficacement leur inventaire de produits a travers une interface intuitive et securisee.
