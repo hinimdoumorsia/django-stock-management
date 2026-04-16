@@ -279,7 +279,7 @@ Interface d'administration : http://127.0.0.1:8000/admin/
 ## 9. Contributeur
 
 **Morsia Guitdam Hinimdou**  
-Etudiant en Genie Industriel - IA & Data Science | ENSAM-Meknes
+Étudiant en génie de l’intelligence artificielle, des technologies des données et de leurs applications industrielles. | ENSAM-Meknes
 
 | Contact | Information |
 |---|---|
