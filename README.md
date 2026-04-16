@@ -2,16 +2,16 @@
 
 
 <h1 style="text-align:center; margin-top:20px;">
-    <i class="fas fa-microchip"></i> Technologies utilisées
+    <i class="fas fa-microchip"></i>
 </h1>
 
-<div style="text-align:center; margin-top:10px;">
-    <i class="fab fa-python"></i> Python &nbsp; | &nbsp;
-    <i class="fas fa-server"></i> Django &nbsp; | &nbsp;
-    <i class="fas fa-database"></i> SQLite &nbsp; | &nbsp;
-    <i class="fab fa-html5"></i> HTML &nbsp; | &nbsp;
-    <i class="fab fa-css3-alt"></i> CSS &nbsp; | &nbsp;
-    <i class="fab fa-bootstrap"></i> Bootstrap
+<div style="text-align:center; margin-top:10px; font-size:24px;">
+    <i class="fab fa-python"></i>
+    <i class="fas fa-server"></i>
+    <i class="fas fa-database"></i>
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-bootstrap"></i>
 </div>
 
 ## 1. Presentation de l'application
