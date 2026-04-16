@@ -285,6 +285,25 @@ Dans le cas où vous n'avez pas de compte, vous pouvez accéder à la page de cr
   <img src="gestion_stock/image/suite_formulaire_compte.PNG" width="45%">
 </p>
 
+
+---
+
+##  Interface utilisateur (User simple)
+
+Après connexion, un utilisateur peut être :
+- Administrateur
+- Super administrateur
+- Utilisateur simple
+
+Dans ce cas, nous présentons uniquement le scénario d’un **utilisateur simple**.
+
+On suppose qu’un administrateur a déjà ajouté des produits dans le système.
+
+L’utilisateur accède alors à la page suivante :
+
+###  Interface utilisateur - Produits
+
+![Interface utilisateur produits](gestion_stock/image/interface_user_poduit.PNG)
 ## 8. Impact et potentiel du projet
 
 ### 8.1 Pour l'entreprise
