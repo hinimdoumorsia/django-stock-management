@@ -1,18 +1,16 @@
 # Gestion de Stock - Application Web Django
 
 
-<h1 style="text-align:center; margin-top:20px;">
-    <i class="fas fa-microchip"></i>
-</h1>
+#  Django Stock Management
 
-<div style="text-align:center; margin-top:10px; font-size:24px;">
-    <i class="fab fa-python"></i>
-    <i class="fas fa-server"></i>
-    <i class="fas fa-database"></i>
-    <i class="fab fa-html5"></i>
-    <i class="fab fa-css3-alt"></i>
-    <i class="fab fa-bootstrap"></i>
-</div>
+![Version](https://img.shields.io/badge/version-1.0.0-7c6af7?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-5.x-092E20?style=for-the-badge&logo=django&logoColor=white)
+![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-UI-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![License](https://img.shields.io/badge/Licence-MIT-green?style=for-the-badge)
 
 ## 1. Presentation de l'application
 
