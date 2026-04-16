@@ -1,0 +1,96 @@
+Structure complète du projet
+text
+
+
+
+gestion_stock/
+├── manage.py
+├── requirements.txt
+├── gestion_stock/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── inventory/
+
+│   ├── __init__.py
+    ├── tokens.py 
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── urls.py
+│   ├── views.py
+│   └── templatetags/
+│       ├── __init__.py
+│       └── custom_filters.py
+├── templates/
+│   └── inventory/
+│       ├── base.html
+│       ├── product_list.html
+│       ├── product_detail.html
+│       ├── product_form.html
+│       ├── product_confirm_delete.html
+│       ├── category_list.html
+│       ├── category_form.html
+│       ├── category_confirm_delete.html
+│       └── registration/
+│           ├── login.html
+│           └── logout.html
+            └──registler.htm
+├── static/
+│   └── css/
+│       └── custom.css
+└── media/
+    └── products/ (dossier pour les images)
+
+
+
+    admin:hmgfils
+    password:1234H567
+
+    NB:la chose a verifier est en fait de s'assurer que toutes les pages sont bien completer et fonctionnel
+
+
+    Lancez le serveur :
+
+bash
+python manage.py runserver
+Ouvrez votre navigateur et allez sur : http://127.0.0.1:8000/admin/
+
+Connectez-vous avec le superutilisateur que vous avez créé
+
+
+Cliquez sur "Groups" (Groupes)
+
+Cliquez sur "ADD GROUP" (Ajouter un groupe) trois fois pour créer :
+
+superadmin
+
+admin
+
+viewer
+
+Ensuite, allez dans "Users" (Utilisateurs) pour créer des utilisateurs de test et les assigner aux groupes
+
+C'est tout ! L'application est prête à être utilisée.
+
+✅ Interface :
+
+Bootstrap responsive
+
+Design propre et moderne
+
+#user simple
+
+idrissmorsia
+m.hinimdou@edu.umi.ac.ma
+password:H1234567M
+
+
+mettre a jour l'architecture en fait 
+
+Créez inventory/utils.py pour les fonctions d'historique :
+
+
+continuer les modificatiosn apres a partir de ca templates/inventory/user_history.html :

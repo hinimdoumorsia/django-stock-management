@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #28a745;">Bienvenue sur Gestion de Stock !</h2>
+        <p>Bonjour <strong>{{ user.username }}</strong>,</p>
+        <p>Merci de vous être inscrit sur notre application de gestion de stock.</p>
+        <p>Pour activer votre compte, veuillez cliquer sur le lien ci-dessous :</p>
+        <p>
+            <a href="http://{{ domain }}{% url 'activate' uidb64=uid token=token %}" 
+               style="background-color: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                Activer mon compte
+            </a>
+        </p>
+        <p>Ou copiez ce lien dans votre navigateur :</p>
+        <p>http://{{ domain }}{% url 'activate' uidb64=uid token=token %}</p>
+        <p>Ce lien expirera automatiquement.</p>
+        <hr>
+        <p style="color: #666; font-size: 12px;">© 2024 - Application de Gestion de Stock | ENSAM-Meknès</p>
+    </div>
+</body>
+</html>

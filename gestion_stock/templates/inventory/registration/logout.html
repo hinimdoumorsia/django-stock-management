@@ -1,0 +1,21 @@
+{% extends 'inventory/base.html' %}
+
+{% block title %}Déconnexion{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-5">
+        <div class="card shadow">
+            <div class="card-header bg-info text-white text-center">
+                <h3><i class="fas fa-sign-out-alt"></i> Déconnexion</h3>
+            </div>
+            <div class="card-body text-center">
+                <p class="fs-5">Vous avez été déconnecté avec succès.</p>
+                <a href="{% url 'login' %}" class="btn btn-primary">
+                    <i class="fas fa-sign-in-alt"></i> Se reconnecter
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

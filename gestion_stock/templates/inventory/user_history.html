@@ -1,0 +1,134 @@
+{% extends 'inventory/base.html' %}
+
+{% block title %}Mon historique{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h4><i class="fas fa-user-circle"></i> Menu</h4>
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="{% url 'user_profile' %}" class="list-group-item list-group-item-action">
+                    <i class="fas fa-user"></i> Mon profil
+                </a>
+                <a href="{% url 'user_profile_edit' %}" class="list-group-item list-group-item-action">
+                    <i class="fas fa-edit"></i> Modifier mes informations
+                </a>
+                <a href="{% url 'user_change_password' %}" class="list-group-item list-group-item-action">
+                    <i class="fas fa-key"></i> Changer mon mot de passe
+                </a>
+                <a href="{% url 'user_history' %}" class="list-group-item list-group-item-action active">
+                    <i class="fas fa-history"></i> Mon historique
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-header bg-info text-white">
+                <h4><i class="fas fa-history"></i> Historique des actions</h4>
+            </div>
+            <div class="card-body">
+                <!-- Filtre -->
+                <form method="get" class="mb-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <select name="action" class="form-select">
+                                <option value="">Toutes les actions</option>
+                                {% for value, label in action_choices %}
+                                <option value="{{ value }}" {% if action_filter == value %}selected{% endif %}>
+                                    {{ label }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-filter"></i> Filtrer
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- Liste historique -->
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Date/Heure</th>
+                                <th>Action</th>
+                                <th>Description</th>
+                                <th>IP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in page_obj %}
+                            <tr>
+                                <td>{{ item.created_at|date:"d/m/Y H:i:s" }}</td>
+                                <td>
+                                    {% if item.action == 'login' %}
+                                        <span class="badge bg-success">Connexion</span>
+                                    {% elif item.action == 'logout' %}
+                                        <span class="badge bg-secondary">Déconnexion</span>
+                                    {% elif item.action == 'create' %}
+                                        <span class="badge bg-primary">Création</span>
+                                    {% elif item.action == 'update' %}
+                                        <span class="badge bg-warning">Modification</span>
+                                    {% elif item.action == 'delete' %}
+                                        <span class="badge bg-danger">Suppression</span>
+                                    {% elif item.action == 'view' %}
+                                        <span class="badge bg-info">Consultation</span>
+                                    {% elif item.action == 'search' %}
+                                        <span class="badge bg-dark">Recherche</span>
+                                    {% else %}
+                                        <span class="badge bg-secondary">{{ item.action }}</span>
+                                    {% endif %}
+                                 </td>
+                                <td>{{ item.description|default:"-" }}</td>
+                                <td>{{ item.ip_address|default:"-" }}</td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="4" class="text-center">Aucun historique trouvé</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Pagination -->
+                {% if page_obj.has_other_pages %}
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        {% if page_obj.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ page_obj.previous_page_number }}&action={{ action_filter }}">
+                                Précédent
+                            </a>
+                        </li>
+                        {% endif %}
+                        
+                        {% for num in page_obj.paginator.page_range %}
+                        <li class="page-item {% if page_obj.number == num %}active{% endif %}">
+                            <a class="page-link" href="?page={{ num }}&action={{ action_filter }}">{{ num }}</a>
+                        </li>
+                        {% endfor %}
+                        
+                        {% if page_obj.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ page_obj.next_page_number }}&action={{ action_filter }}">
+                                Suivant
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
