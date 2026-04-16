@@ -18,7 +18,7 @@ L'application couvre les besoins essentiels suivants :
 
 ## 2. Objectif et contexte du developpement
 
-Cette application a ete developpee dans le cadre de la formation **Genie Industriel - Intelligence Artificielle et Data Science** a **l'ENSAM-Meknes**, sous la supervision de **Pr Brahim BAKKAS**.
+Cette application a été développée dans le cadre d’un travaux pratiques à l’ENSAM-Meknès, sous la supervision du Pr Brahim BAKKAS.
 
 Elle repond a plusieurs besoins concrets :
 
