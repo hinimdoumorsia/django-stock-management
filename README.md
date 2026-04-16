@@ -304,6 +304,18 @@ L’utilisateur accède alors à la page suivante :
 ###  Interface utilisateur - Produits
 
 ![Interface utilisateur produits](gestion_stock/image/interface_user_poduit.PNG)
+
+
+---
+Une fois sur cette page, vous pouvez cliquer sur **Voir les détails du produit**.
+
+Vous serez ensuite redirigé vers la page suivante :
+
+###  Détail du produit
+
+![Détail du produit](gestion_stock/image/detaille_produit.PNG)
+
+---
 ## 8. Impact et potentiel du projet
 
 ### 8.1 Pour l'entreprise
