@@ -262,6 +262,29 @@ Interface d'administration : http://127.0.0.1:8000/admin/
 
 ---
 
+## 🔐 Interface de connexion
+
+Une fois l'application lancée, vous pouvez accéder directement à l’interface suivante :
+
+### Champs de connexion
+- Nom d'utilisateur  
+- Mot de passe  
+
+![Interface de connexion](gestion_stock/image/interface_de_connexion.PNG)
+
+---
+
+##  Création de compte
+
+Dans le cas où vous n'avez pas de compte, vous pouvez accéder à la page de création de compte.
+
+###  Formulaire d'inscription
+
+<p align="center">
+  <img src="gestion_stock/image/formulaire_creation_compte.PNG" width="45%">
+  <img src="gestion_stock/image/suite_formulaire_compte.PNG" width="45%">
+</p>
+
 ## 8. Impact et potentiel du projet
 
 ### 8.1 Pour l'entreprise
