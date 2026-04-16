@@ -284,7 +284,7 @@ Etudiant en Genie Industriel - IA & Data Science | ENSAM-Meknes
 | Contact | Information |
 |---|---|
 | Email | hinimdoumorsia@gmail.com |
-| LinkedIn | Morsia Guitdam Hinimdou |
+| LinkedIn | [Morsia Guitdam Hinimdou](https://www.linkedin.com/in/morsia-guitdam-hinimdou-266bb0269/) |
 | WhatsApp | +237 690 124 864 |
 | Portfolio | https://site-web-nodemailer.vercel.app |
 
