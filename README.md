@@ -362,6 +362,7 @@ Lors de son utilisation, vous pouvez accéder aux différentes interfaces prése
 
 Vue globale du côté utilisateur.  
 Le côté administrateur, quant à lui, offre d’autres fonctionnalités et une interface différente.
+
 ---
 
 ## 8. Impact et potentiel du projet
