@@ -316,6 +316,54 @@ Vous serez ensuite redirigé vers la page suivante :
 ![Détail du produit](gestion_stock/image/detaille_produit.PNG)
 
 ---
+
+Pour accéder à vos informations de profil, vous pouvez simplement vous rendre sur la page de profil et cliquer sur **Voir le profil**.
+
+### 👤 Profil utilisateur
+
+![Profil utilisateur](gestion_stock/image/profil_user.PNG)
+
+---
+Depuis la page de profil, l’utilisateur peut modifier ses informations en cliquant sur **Modifier le profil**.
+
+Il accède alors à la page suivante :
+
+###  Modification des informations (partie 1)
+
+<p align="center">
+  <img src="gestion_stock/image/modiifer_oinfo_incomplete.PNG" width="45%">
+  <img src="gestion_stock/image/modifie_info_suite.PNG" width="45%">
+</p>
+
+---
+Pour changer votre mot de passe, dirigez-vous vers l’interface suivante :
+
+### 🔒 Changement de mot de passe
+
+![Changer mot de passe](gestion_stock/image/Changer_mot_de_pass.PNG)
+
+---
+Pour consulter l’historique, il vous suffit de cliquer sur **Historique**.
+
+### Interface de l’historique
+
+![Historique](gestion_stock/image/historique.PNG)
+
+---
+###  Footer de l’application
+
+Le pied de page de l’application est présenté comme suit :
+
+![Footer de l’application](gestion_stock/image/footer_de_app.PNG)
+
+---
+Vous avez désormais une vue globale de l’application.  
+Lors de son utilisation, vous pouvez accéder aux différentes interfaces présentées, à l’exception des données et objets ajoutés dynamiquement par l’administrateur.
+
+Vue globale du côté utilisateur.  
+Le côté administrateur, quant à lui, offre d’autres fonctionnalités et une interface différente.
+---
+
 ## 8. Impact et potentiel du projet
 
 ### 8.1 Pour l'entreprise
