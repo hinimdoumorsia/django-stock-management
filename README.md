@@ -365,6 +365,14 @@ Le côté administrateur, quant à lui, offre d’autres fonctionnalités et une
 
 ---
 
+##  Démonstration vidéo
+
+Pour accéder à une démonstration complète de l’application, nous vous invitons à visionner la vidéo suivante :
+
+👉 https://youtu.be/H6uLeqcphTU
+
+---
+
 ## 8. Impact et potentiel du projet
 
 ### 8.1 Pour l'entreprise
