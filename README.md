@@ -25,7 +25,12 @@ L'application couvre les besoins essentiels suivants :
 - Gestion des utilisateurs avec differents niveaux d'acces
 - Historique des actions des utilisateurs
 - Gestion des profils utilisateurs avec photos
+---
+## Documentation du projet
 
+Vous pouvez consulter ci-dessous la documentation complète du projet en ligne :
+
+👉 https://django-stock-management.readthedocs.io/fr/latest/
 ---
 
 ## 2. Objectif et contexte du developpement
