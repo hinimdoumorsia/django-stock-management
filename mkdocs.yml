@@ -1,5 +1,7 @@
+site_name: Documentation Gestion de Stock
 site_description: Documentation complète de l'application de gestion de stock développée avec Django
 site_author: HINIMDOU MORSIA GUITDAM
+
 theme:
   name: material
 
@@ -19,7 +21,6 @@ nav:
   - Déploiement: deployment.md
   - Conclusion: conclusion.md
   - Annexes: annexes.md
-
 
 markdown_extensions:
   - admonition
