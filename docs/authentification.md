@@ -110,12 +110,12 @@ Cela permet d’assurer une gestion stricte des permissions dans l’application
   </a>
 
   <a href="https://www.datacamp.com/portfolio/mhinimdou" target="_blank" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
-    <img src="/images/datacamp.jpg" width="22"/>
+    <img src="docs/images/datacamp.jpg" width="22"/>
     DataCamp
   </a>
 
   <a href="https://www.kaggle.com/morsiahinimdou" target="_blank" style="display:flex; align-items:center; gap:8px; text-decoration:none;">
-    <img src="/images/kaggleImg.png" width="22"/>
+    <img src="docs/images/kaggleImg.png" width="22"/>
     Kaggle
   </a>
 
