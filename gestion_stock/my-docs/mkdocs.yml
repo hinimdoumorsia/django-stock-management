@@ -1,0 +1,31 @@
+site_description: Documentation complète de l'application de gestion de stock développée avec Django
+site_author: HINIMDOU MORSIA GUITDAM
+theme:
+  name: material
+
+nav:
+  - Accueil: index.md
+  - Introduction: introduction.md
+  - Objectif: objectif.md
+  - Architecture: architecture.md
+  - Installation: installation.md
+  - Base de données: base_de_donnees.md
+  - Backend: backend.md
+  - Frontend: frontend.md
+  - Authentification: authentification.md
+  - Fonctionnalités: fonctionnalites.md
+  - API: api.md
+  - Tests: tests.md
+  - Déploiement: deployment.md
+  - Conclusion: conclusion.md
+  - Annexes: annexes.md
+
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+
+docs_dir: docs
