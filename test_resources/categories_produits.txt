@@ -1,0 +1,31 @@
+CATÉGORIES DE PRODUITS - SYSTÈME DE GESTION DE STOCK
+
+1. Électronique
+Produits technologiques incluant smartphones, ordinateurs, tablettes, accessoires informatiques et gadgets électroniques. Utilisés pour la communication, le travail et le divertissement.
+
+2. Vêtements
+Articles vestimentaires pour hommes, femmes et enfants : t-shirts, pantalons, vestes, chaussures et accessoires de mode.
+
+3. Alimentation
+Produits alimentaires emballés ou frais : boissons, snacks, produits de base, épicerie générale et produits locaux.
+
+4. Papeterie
+Fournitures scolaires et de bureau : cahiers, stylos, imprimantes, feuilles, dossiers et accessoires de bureau.
+
+5. Électroménager
+Appareils pour la maison : réfrigérateurs, machines à laver, micro-ondes, climatiseurs et petits appareils domestiques.
+
+6. Beauté et soins
+Produits cosmétiques et de soins personnels : crèmes, parfums, maquillage, produits capillaires et hygiène corporelle.
+
+7. Sport et loisirs
+Équipements sportifs et articles de loisirs : ballons, vêtements de sport, équipements de fitness et accessoires outdoor.
+
+8. Automobile
+Pièces détachées et accessoires pour véhicules : pneus, huiles, batteries, outils et équipements de voiture.
+
+9. Fournitures de bureau
+Matériel professionnel pour entreprises : classeurs, imprimantes, accessoires organisationnels et outils administratifs.
+
+10. Accessoires
+Produits divers complémentaires : sacs, montres, lunettes, bijoux et petits objets du quotidien.

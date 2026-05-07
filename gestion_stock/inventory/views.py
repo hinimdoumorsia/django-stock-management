@@ -12,10 +12,17 @@ from django.utils.encoding import force_bytes, force_str
 from django.contrib.auth.forms import PasswordChangeForm
 from django.db import models
 
-from .models import Category, Product, UserHistory, Profile
+from .models import Category, Product, UserHistory, Profile, ChatConversation
 from .forms import CategoryForm, ProductForm, UserRegistrationForm, UserProfileForm, ProfileForm
 from .tokens import account_activation_token
 from .utils import add_history
+
+from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_POST
+import json
+from django.http import JsonResponse
+
+from .chatbot.agent import get_bot_response 
 
 # ============ Fonctions utilitaires pour les rôles ============
 def is_superadmin(user):
@@ -36,9 +43,7 @@ def register(request):
             user.is_active = False
             user.save()
             
-            # Créer un profil vide pour l'utilisateur
-            Profile.objects.create(user=user)
-            
+            Profile.objects.get_or_create(user=user)
             viewer_group, created = Group.objects.get_or_create(name='viewer')
             user.groups.add(viewer_group)
             
@@ -95,10 +100,8 @@ def user_profile(request):
         'is_admin': is_admin(request.user),
     })
 
-# ============ Modification du profil avec photo ============
 @login_required
 def user_profile_edit(request):
-    # Créer automatiquement le profil s'il n'existe pas
     profile, created = Profile.objects.get_or_create(user=request.user)
     
     if request.method == 'POST':
@@ -193,10 +196,9 @@ def product_list(request):
 
     paginator = Paginator(products, 6)
     page_obj = paginator.get_page(request.GET.get('page'))
-
     categories = Category.objects.all()
 
-    context = {
+    return render(request, 'inventory/product_list.html', {
         'page_obj': page_obj,
         'categories': categories,
         'query': query,
@@ -204,19 +206,17 @@ def product_list(request):
         'sort': sort,
         'is_superadmin': is_superadmin(request.user),
         'is_admin': is_admin(request.user),
-    }
-    return render(request, 'inventory/product_list.html', context)
+    })
 
 @login_required
 def product_detail(request, pk):
     product = get_object_or_404(Product, pk=pk)
     add_history(request.user, 'view', f'Consultation du produit: {product.name}', request)
-    context = {
+    return render(request, 'inventory/product_detail.html', {
         'product': product,
         'is_superadmin': is_superadmin(request.user),
         'is_admin': is_admin(request.user),
-    }
-    return render(request, 'inventory/product_detail.html', context)
+    })
 
 @login_required
 @user_passes_test(is_admin)
@@ -230,7 +230,12 @@ def product_create(request):
             return redirect('product_detail', pk=product.pk)
     else:
         form = ProductForm()
-    return render(request, 'inventory/product_form.html', {'form': form, 'title': 'Ajouter un produit'})
+    return render(request, 'inventory/product_form.html', {
+        'form': form,
+        'title': 'Ajouter un produit',
+        'is_superadmin': is_superadmin(request.user),
+        'is_admin': is_admin(request.user),
+    })
 
 @login_required
 @user_passes_test(is_admin)
@@ -245,7 +250,12 @@ def product_update(request, pk):
             return redirect('product_detail', pk=product.pk)
     else:
         form = ProductForm(instance=product)
-    return render(request, 'inventory/product_form.html', {'form': form, 'title': 'Modifier le produit'})
+    return render(request, 'inventory/product_form.html', {
+        'form': form,
+        'title': 'Modifier le produit',
+        'is_superadmin': is_superadmin(request.user),
+        'is_admin': is_admin(request.user),
+    })
 
 @login_required
 @user_passes_test(is_admin)
@@ -257,14 +267,22 @@ def product_delete(request, pk):
         add_history(request.user, 'delete', f'Suppression du produit: {product_name}', request)
         messages.success(request, f'Produit "{product_name}" supprimé avec succès!')
         return redirect('product_list')
-    return render(request, 'inventory/product_confirm_delete.html', {'product': product})
+    return render(request, 'inventory/product_confirm_delete.html', {
+        'product': product,
+        'is_superadmin': is_superadmin(request.user),
+        'is_admin': is_admin(request.user),
+    })
 
 # ============ Vues des catégories ============
 @login_required
 @user_passes_test(is_superadmin)
 def category_list(request):
     categories = Category.objects.all()
-    return render(request, 'inventory/category_list.html', {'categories': categories})
+    return render(request, 'inventory/category_list.html', {
+        'categories': categories,
+        'is_superadmin': is_superadmin(request.user),
+        'is_admin': is_admin(request.user),
+    })
 
 @login_required
 @user_passes_test(is_superadmin)
@@ -278,7 +296,12 @@ def category_create(request):
             return redirect('category_list')
     else:
         form = CategoryForm()
-    return render(request, 'inventory/category_form.html', {'form': form, 'title': 'Ajouter une catégorie'})
+    return render(request, 'inventory/category_form.html', {
+        'form': form,
+        'title': 'Ajouter une catégorie',
+        'is_superadmin': is_superadmin(request.user),
+        'is_admin': is_admin(request.user),
+    })
 
 @login_required
 @user_passes_test(is_superadmin)
@@ -293,7 +316,12 @@ def category_update(request, pk):
             return redirect('category_list')
     else:
         form = CategoryForm(instance=category)
-    return render(request, 'inventory/category_form.html', {'form': form, 'title': 'Modifier la catégorie'})
+    return render(request, 'inventory/category_form.html', {
+        'form': form,
+        'title': 'Modifier la catégorie',
+        'is_superadmin': is_superadmin(request.user),
+        'is_admin': is_admin(request.user),
+    })
 
 @login_required
 @user_passes_test(is_superadmin)
@@ -308,4 +336,47 @@ def category_delete(request, pk):
         add_history(request.user, 'delete', f'Suppression de la catégorie: {category_name}', request)
         messages.success(request, f'Catégorie "{category_name}" supprimée avec succès!')
         return redirect('category_list')
-    return render(request, 'inventory/category_confirm_delete.html', {'category': category})
+    return render(request, 'inventory/category_confirm_delete.html', {
+        'category': category,
+        'is_superadmin': is_superadmin(request.user),
+        'is_admin': is_admin(request.user),
+    })
+
+# ============ Chatbot API ============
+@csrf_exempt
+@require_POST
+def chatbot_api(request):
+    try:
+        data = json.loads(request.body)
+        message = data.get('message', '').strip()
+
+        if not message:
+            return JsonResponse({'response': 'Message vide.'}, status=400)
+
+        # ✅ Session ID unique par utilisateur
+        if not request.session.session_key:
+            request.session.create()
+        session_id = request.session.session_key
+
+        # ✅ Envoyer UNIQUEMENT le message de l'utilisateur
+        # L'historique est géré par LangGraph MemorySaver automatiquement
+        response_text = get_bot_response(message, session_id)
+
+        # ✅ Sauvegarder l'échange en base pour historique admin
+        try:
+            ChatConversation.objects.create(
+                user=request.user if request.user.is_authenticated else None,
+                session_id=session_id,
+                message=message,
+                response=response_text[:2000],
+                is_feedback=False
+            )
+        except Exception:
+            pass  # Ne pas bloquer si la sauvegarde échoue
+
+        return JsonResponse({'response': response_text})
+
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return JsonResponse({'response': f"❌ Erreur technique: {str(e)}"}, status=500)

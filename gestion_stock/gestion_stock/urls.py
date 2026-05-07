@@ -7,7 +7,8 @@ from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('i18n/', include('django.conf.urls.i18n')),  # Pour le sélecteur de langue
+    path('i18n/', include('django.conf.urls.i18n')),
+    path('chatbot/api/', include('inventory.chatbot_urls')),  # ← CHATBOT EN DEHORS (AJOUTER CETTE LIGNE)
 ]
 
 # URLs avec préfixe de langue automatique

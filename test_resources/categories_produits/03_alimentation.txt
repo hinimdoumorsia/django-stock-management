@@ -1,0 +1,11 @@
+Riz Basmati 5kg
+Prix: 18€
+Description: Riz long grain de qualité supérieure, parfumé et léger.
+
+Coca-Cola 1.5L
+Prix: 2€
+Description: Boisson gazeuse rafraîchissante.
+
+Chips Lay's Classiques
+Prix: 1.5€
+Description: Snack croustillant au goût salé classique.

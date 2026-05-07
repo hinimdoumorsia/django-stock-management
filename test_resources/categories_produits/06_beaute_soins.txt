@@ -1,0 +1,11 @@
+Crème Nivea Hydratante
+Prix: 6€
+Description: Crème hydratante pour peau sèche.
+
+Parfum Dior Sauvage
+Prix: 120€
+Description: Parfum masculin intense et élégant.
+
+Shampooing Head & Shoulders
+Prix: 4€
+Description: Anti-pelliculaire efficace pour usage quotidien.

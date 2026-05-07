@@ -1,0 +1,11 @@
+Pneu Michelin 205/55R16
+Prix: 80€
+Description: Pneu durable haute performance pour voiture.
+
+Batterie Varta 70Ah
+Prix: 110€
+Description: Batterie fiable pour démarrage automobile.
+
+Huile moteur Castrol 5W30
+Prix: 25€
+Description: Huile moteur synthétique haute protection.
