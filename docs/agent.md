@@ -145,7 +145,7 @@ Pour garantir la fiabilité :
 
 Voici un aperçu visuel des principales fonctionnalités offertes par StockBot :
 
-<img src="images/fonctionalité.png" alt="Fonctionnalités de StockBot" style="width:100%; max-width:900px; border-radius:10px;"/>
+<img src="images/fonctionnalites.png" alt="Fonctionnalités de StockBot" style="width:100%; max-width:900px; border-radius:10px;"/>
 
 <p style="margin-top:10px;">
 📋 <b>Fonctionnalités principales :</b> StockBot offre une gamme complète d'outils pour la gestion interactive du stock, allant de la recherche intelligente aux recommandations personnalisées, en passant par la gestion des feedbacks clients.
