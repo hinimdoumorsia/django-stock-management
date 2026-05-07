@@ -17,6 +17,7 @@ nav:
   - Frontend: frontend.md
   - Authentification: authentification.md
   - Fonctionnalités: fonctionnalites.md
+  - Agent Chatbot: agent.md
   - API: api.md
   - Tests: tests.md
   - Déploiement: deployment.md
