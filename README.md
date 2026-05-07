@@ -287,7 +287,7 @@ Dans le cas où vous n'avez pas de compte, vous pouvez accéder à la page de cr
 
 <p align="center">
   <img src="docs/images/formulaire_creation_compte.PNG" width="45%">
-  <img src="docs/image/suite_formulaire_compte.PNG" width="45%">
+  <img src="docs/images/suite_formulaire_compte.PNG" width="45%">
 </p>
 
 
