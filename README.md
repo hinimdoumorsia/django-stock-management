@@ -275,7 +275,7 @@ Une fois l'application lancée, vous pouvez accéder directement à l’interfac
 - Nom d'utilisateur  
 - Mot de passe  
 
-![Interface de connexion](gestion_stock/image/interface_de_connexion.PNG)
+![Interface de connexion](docs/images/interface_de_connexion.PNG)
 
 ---
 
@@ -286,8 +286,8 @@ Dans le cas où vous n'avez pas de compte, vous pouvez accéder à la page de cr
 ###  Formulaire d'inscription
 
 <p align="center">
-  <img src="gestion_stock/image/formulaire_creation_compte.PNG" width="45%">
-  <img src="gestion_stock/image/suite_formulaire_compte.PNG" width="45%">
+  <img src="docs/images/formulaire_creation_compte.PNG" width="45%">
+  <img src="docs/image/suite_formulaire_compte.PNG" width="45%">
 </p>
 
 
@@ -308,7 +308,7 @@ L’utilisateur accède alors à la page suivante :
 
 ###  Interface utilisateur - Produits
 
-![Interface utilisateur produits](gestion_stock/image/interface_user_poduit.PNG)
+![Interface utilisateur produits](docs/image/interface_user_poduit.PNG)
 
 
 ---
