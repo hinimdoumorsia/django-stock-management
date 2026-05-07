@@ -1,0 +1,493 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-07 01:00+0100\n"
+"PO-Revision-Date: 2026-05-07 00:47+0100\n"
+"Last-Translator: ADMIN <admin@localhost>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\gestion_stock\settings.py:80
+msgid "Français"
+msgstr "Français"
+
+#: .\gestion_stock\settings.py:81
+msgid "English"
+msgstr "Anglais"
+
+#: .\gestion_stock\settings.py:82
+msgid "العربية"
+msgstr "Arabe"
+
+#: .\gestion_stock\settings.py:83
+msgid "ⵜⴰⵎⴰⵣⵉⵖⵜ"
+msgstr "Tamazight"
+
+#: .\gestion_stock\settings.py:84
+msgid "中文 (简体)"
+msgstr "Chinois simplifié"
+
+#: .\templates\inventory\base.html:7 .\templates\inventory\base.html:107
+#: .\templates\inventory\base.html:202
+msgid "Gestion de Stock"
+msgstr "Gestion de Stock"
+
+#: .\templates\inventory\base.html:116 .\templates\inventory\base.html:208
+msgid "Produits"
+msgstr "Produits"
+
+#: .\templates\inventory\base.html:122 .\templates\inventory\base.html:210
+msgid "Catégories"
+msgstr "Catégories"
+
+#: .\templates\inventory\base.html:129
+msgid "Ajouter produit"
+msgstr "Ajouter produit"
+
+#: .\templates\inventory\base.html:136
+msgid "Ajouter catégorie"
+msgstr "Ajouter catégorie"
+
+#: .\templates\inventory\base.html:153
+msgid "Superadmin"
+msgstr "Superadmin"
+
+#: .\templates\inventory\base.html:155
+msgid "Admin"
+msgstr "Admin"
+
+#: .\templates\inventory\base.html:157
+msgid "Utilisateur"
+msgstr "Utilisateur"
+
+#: .\templates\inventory\base.html:162 .\templates\inventory\base.html:212
+msgid "Mon profil"
+msgstr "Mon profil"
+
+#: .\templates\inventory\base.html:165
+msgid "Mon historique"
+msgstr "Mon historique"
+
+#: .\templates\inventory\base.html:172
+msgid "Déconnexion"
+msgstr "Déconnexion"
+
+#: .\templates\inventory\base.html:203
+msgid ""
+"Application complète de gestion de stock des produits. Gérez facilement vos "
+"produits, catégories et stocks."
+msgstr ""
+"Application complète de gestion de stock des produits. Gérez facilement vos "
+"produits, catégories et stocks."
+
+#: .\templates\inventory\base.html:206
+msgid "Liens rapides"
+msgstr "Liens rapides"
+
+#: .\templates\inventory\base.html:213
+msgid "Historique"
+msgstr "Historique"
+
+#: .\templates\inventory\base.html:217
+msgid "Suivez-moi"
+msgstr "Suivez-moi"
+
+#: .\templates\inventory\base.html:226
+msgid "Application de Gestion de Stock"
+msgstr "Application de Gestion de Stock"
+
+#: .\templates\inventory\category_confirm_delete.html:4
+#: .\templates\inventory\product_confirm_delete.html:4
+#: .\templates\inventory\product_detail.html:66
+msgid "Supprimer"
+msgstr "Supprimer"
+
+#: .\templates\inventory\category_confirm_delete.html:11
+#: .\templates\inventory\product_confirm_delete.html:11
+msgid "Confirmation de suppression"
+msgstr "Confirmation de suppression"
+
+#: .\templates\inventory\category_confirm_delete.html:14
+msgid "Êtes-vous sûr de vouloir supprimer la catégorie suivante ?"
+msgstr "Êtes-vous sûr de vouloir supprimer la catégorie suivante ?"
+
+#: .\templates\inventory\category_confirm_delete.html:18
+#: .\templates\inventory\product_confirm_delete.html:19
+msgid "Cette action est irréversible"
+msgstr "Cette action est irréversible"
+
+#: .\templates\inventory\category_confirm_delete.html:24
+#: .\templates\inventory\category_form.html:33
+#: .\templates\inventory\product_confirm_delete.html:25
+#: .\templates\inventory\product_form.html:36
+#: .\templates\inventory\user_change_password.html:58
+#: .\templates\inventory\user_profile_edit.html:97
+msgid "Annuler"
+msgstr "Annuler"
+
+#: .\templates\inventory\category_confirm_delete.html:27
+#: .\templates\inventory\product_confirm_delete.html:28
+msgid "Confirmer la suppression"
+msgstr "Confirmer la suppression"
+
+#: .\templates\inventory\category_form.html:36
+#: .\templates\inventory\product_form.html:39
+#: .\templates\inventory\user_profile_edit.html:100
+msgid "Enregistrer"
+msgstr "Enregistrer"
+
+#: .\templates\inventory\category_list.html:4
+#: .\templates\inventory\category_list.html:8
+msgid "Gestion des catégories"
+msgstr "Gestion des catégories"
+
+#: .\templates\inventory\category_list.html:10
+msgid "Nouvelle catégorie"
+msgstr "Nouvelle catégorie"
+
+#: .\templates\inventory\category_list.html:20
+#: .\templates\inventory\user_profile.html:71
+msgid "Nom"
+msgstr "Nom"
+
+#: .\templates\inventory\category_list.html:21
+#: .\templates\inventory\product_detail.html:50
+#: .\templates\inventory\user_history.html:64
+msgid "Description"
+msgstr "Description"
+
+#: .\templates\inventory\category_list.html:22
+msgid "Nombre de produits"
+msgstr "Nombre de produits"
+
+#: .\templates\inventory\category_list.html:23
+msgid "Date création"
+msgstr "Date création"
+
+#: .\templates\inventory\category_list.html:24
+msgid "Actions"
+msgstr "Actions"
+
+#: .\templates\inventory\category_list.html:45
+msgid "Impossible de supprimer - catégorie contient des produits"
+msgstr "Impossible de supprimer - catégorie contient des produits"
+
+#: .\templates\inventory\category_list.html:53
+msgid "Aucune catégorie trouvée."
+msgstr "Aucune catégorie trouvée."
+
+#: .\templates\inventory\product_confirm_delete.html:14
+msgid "Êtes-vous sûr de vouloir supprimer le produit suivant ?"
+msgstr "Êtes-vous sûr de vouloir supprimer le produit suivant ?"
+
+#: .\templates\inventory\product_confirm_delete.html:17
+msgid "Prix"
+msgstr "Prix"
+
+#: .\templates\inventory\product_confirm_delete.html:17
+#: .\templates\inventory\product_list.html:76
+#: .\templates\inventory\product_list.html:78
+msgid "Stock"
+msgstr "Stock"
+
+#: .\templates\inventory\product_detail.html:10
+msgid "Retour à la liste"
+msgstr "Retour à la liste"
+
+#: .\templates\inventory\product_detail.html:28
+#: .\templates\inventory\product_list.html:26
+msgid "Catégorie"
+msgstr "Catégorie"
+
+#: .\templates\inventory\product_detail.html:37
+msgid "Rupture de stock"
+msgstr "Rupture de stock"
+
+#: .\templates\inventory\product_detail.html:41
+msgid "Stock faible"
+msgstr "Stock faible"
+
+#: .\templates\inventory\product_detail.html:41
+#: .\templates\inventory\product_detail.html:45
+msgid "unités"
+msgstr "unités"
+
+#: .\templates\inventory\product_detail.html:45
+msgid "En stock"
+msgstr "En stock"
+
+#: .\templates\inventory\product_detail.html:54
+msgid "Créé le"
+msgstr "Créé le"
+
+#: .\templates\inventory\product_detail.html:55
+msgid "Dernière modification"
+msgstr "Dernière modification"
+
+#: .\templates\inventory\product_detail.html:63
+msgid "Modifier"
+msgstr "Modifier"
+
+#: .\templates\inventory\product_list.html:4
+#: .\templates\inventory\product_list.html:8
+msgid "Liste des produits"
+msgstr "Liste des produits"
+
+#: .\templates\inventory\product_list.html:11
+msgid "Nouveau produit"
+msgstr "Nouveau produit"
+
+#: .\templates\inventory\product_list.html:19
+#: .\templates\inventory\user_history.html:86
+msgid "Recherche"
+msgstr "Recherche"
+
+#: .\templates\inventory\product_list.html:22
+msgid "Nom ou description..."
+msgstr "Nom ou description..."
+
+#: .\templates\inventory\product_list.html:28
+msgid "Toutes les catégories"
+msgstr "Toutes les catégories"
+
+#: .\templates\inventory\product_list.html:37
+msgid "Trier par"
+msgstr "Trier par"
+
+#: .\templates\inventory\product_list.html:39
+msgid "Nom (A-Z)"
+msgstr "Nom (A-Z)"
+
+#: .\templates\inventory\product_list.html:40
+msgid "Prix (croissant)"
+msgstr "Prix (croissant)"
+
+#: .\templates\inventory\product_list.html:41
+msgid "Prix (décroissant)"
+msgstr "Prix (décroissant)"
+
+#: .\templates\inventory\product_list.html:42
+msgid "Stock (croissant)"
+msgstr "Stock (croissant)"
+
+#: .\templates\inventory\product_list.html:43
+msgid "Stock (décroissant)"
+msgstr "Stock (décroissant)"
+
+#: .\templates\inventory\product_list.html:48
+#: .\templates\inventory\user_history.html:51
+msgid "Filtrer"
+msgstr "Filtrer"
+
+#: .\templates\inventory\product_list.html:74
+msgid "Rupture"
+msgstr "Rupture"
+
+#: .\templates\inventory\product_list.html:82
+msgid "Détail"
+msgstr "Détail"
+
+#: .\templates\inventory\product_list.html:92
+msgid "Page navigation"
+msgstr "Page navigation"
+
+#: .\templates\inventory\product_list.html:97
+#: .\templates\inventory\user_history.html:110
+msgid "Précédent"
+msgstr "Précédent"
+
+#: .\templates\inventory\product_list.html:111
+#: .\templates\inventory\user_history.html:124
+msgid "Suivant"
+msgstr "Suivant"
+
+#: .\templates\inventory\product_list.html:120
+msgid "Aucun produit trouvé."
+msgstr "Aucun produit trouvé."
+
+#: .\templates\inventory\registration\login.html:4
+#: .\templates\inventory\registration\login.html:11
+#: .\templates\inventory\user_history.html:74
+msgid "Connexion"
+msgstr "Connexion"
+
+#: .\templates\inventory\registration\login.html:16
+msgid "Nom d'utilisateur ou mot de passe incorrect."
+msgstr "Nom d'utilisateur ou mot de passe incorrect."
+
+#: .\templates\inventory\registration\login.html:23
+#: .\templates\inventory\user_profile.html:59
+msgid "Nom d'utilisateur"
+msgstr "Nom d'utilisateur"
+
+#: .\templates\inventory\registration\login.html:30
+msgid "Mot de passe"
+msgstr "Mot de passe"
+
+#: .\templates\inventory\registration\login.html:38
+msgid "Se connecter"
+msgstr "Se connecter"
+
+#: .\templates\inventory\registration\login.html:44
+msgid "Pas encore de compte"
+msgstr "Pas encore de compte"
+
+#: .\templates\inventory\registration\login.html:44
+#: .\templates\inventory\registration\register.html:11
+msgid "Créer un compte"
+msgstr "Créer un compte"
+
+#: .\templates\inventory\registration\logout.html:14
+msgid "Vous avez été déconnecté avec succès."
+msgstr "Vous avez été déconnecté avec succès."
+
+#: .\templates\inventory\registration\logout.html:16
+msgid "Se reconnecter"
+msgstr "Se reconnecter"
+
+#: .\templates\inventory\registration\register.html:4
+msgid "Inscription"
+msgstr "Inscription"
+
+#: .\templates\inventory\registration\register.html:36
+msgid "S'inscrire"
+msgstr "S'inscrire"
+
+#: .\templates\inventory\registration\register.html:42
+msgid "Déjà un compte"
+msgstr "Déjà un compte"
+
+#: .\templates\inventory\registration\register.html:42
+msgid "Connectez-vous"
+msgstr "Connectez-vous"
+
+#: .\templates\inventory\user_change_password.html:4
+#: .\templates\inventory\user_change_password.html:21
+#: .\templates\inventory\user_change_password.html:33
+#: .\templates\inventory\user_history.html:21
+#: .\templates\inventory\user_profile.html:42
+#: .\templates\inventory\user_profile_edit.html:42
+msgid "Changer mon mot de passe"
+msgstr "Changer mon mot de passe"
+
+#: .\templates\inventory\user_change_password.html:11
+#: .\templates\inventory\user_history.html:11
+#: .\templates\inventory\user_profile.html:11
+#: .\templates\inventory\user_profile_edit.html:11
+msgid "Menu"
+msgstr "Menu"
+
+#: .\templates\inventory\user_change_password.html:18
+#: .\templates\inventory\user_history.html:18
+#: .\templates\inventory\user_profile.html:39
+#: .\templates\inventory\user_profile_edit.html:39
+#: .\templates\inventory\user_profile_edit.html:54
+msgid "Modifier mes informations"
+msgstr "Modifier mes informations"
+
+#: .\templates\inventory\user_change_password.html:61
+msgid "Changer le mot de passe"
+msgstr "Changer le mot de passe"
+
+#: .\templates\inventory\user_history.html:33
+msgid "Historique des actions"
+msgstr "Historique des actions"
+
+#: .\templates\inventory\user_history.html:41
+msgid "Toutes les actions"
+msgstr "Toutes les actions"
+
+#: .\templates\inventory\user_history.html:62
+msgid "Date/Heure"
+msgstr "Date/Heure"
+
+#: .\templates\inventory\user_history.html:63
+msgid "Action"
+msgstr "Action"
+
+#: .\templates\inventory\user_history.html:65
+msgid "IP"
+msgstr "IP"
+
+#: .\templates\inventory\user_history.html:78
+msgid "Création"
+msgstr "Création"
+
+#: .\templates\inventory\user_history.html:80
+msgid "Modification"
+msgstr "Modification"
+
+#: .\templates\inventory\user_history.html:82
+msgid "Suppression"
+msgstr "Suppression"
+
+#: .\templates\inventory\user_history.html:84
+msgid "Consultation"
+msgstr "Consultation"
+
+#: .\templates\inventory\user_history.html:96
+msgid "Aucun historique trouvé"
+msgstr "Aucun historique trouvé"
+
+#: .\templates\inventory\user_profile.html:16
+#: .\templates\inventory\user_profile_edit.html:16
+msgid "Photo de profil"
+msgstr "Photo de profil"
+
+#: .\templates\inventory\user_profile.html:54
+msgid "Informations personnelles"
+msgstr "Informations personnelles"
+
+#: .\templates\inventory\user_profile.html:63
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\inventory\user_profile.html:67
+msgid "Prénom"
+msgstr "Prénom"
+
+#: .\templates\inventory\user_profile.html:75
+msgid "Téléphone"
+msgstr "Téléphone"
+
+#: .\templates\inventory\user_profile.html:79
+msgid "Adresse"
+msgstr "Adresse"
+
+#: .\templates\inventory\user_profile.html:83
+msgid "Bio"
+msgstr "Bio"
+
+#: .\templates\inventory\user_profile.html:87
+msgid "Rôle"
+msgstr "Rôle"
+
+#: .\templates\inventory\user_profile.html:99
+msgid "Date d'inscription"
+msgstr "Date d'inscription"
+
+#: .\templates\inventory\user_profile.html:103
+msgid "Dernière connexion"
+msgstr "Dernière connexion"
+
+#: .\templates\inventory\user_profile_edit.html:4
+msgid "Modifier mon profil"
+msgstr "Modifier mon profil"
+
+#: .\templates\inventory\user_profile_edit.html:60
+msgid "Informations du compte"
+msgstr "Informations du compte"
+
+#: .\templates\inventory\user_profile_edit.html:77
+msgid "Photo de profil et informations supplémentaires"
+msgstr "Photo de profil et informations supplémentaires"

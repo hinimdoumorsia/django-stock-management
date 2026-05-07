@@ -1,32 +1,33 @@
 {% extends 'inventory/base.html' %}
+{% load i18n %}
 
-{% block title %}Connexion{% endblock %}
+{% block title %}{% trans "Connexion" %}{% endblock %}
 
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-md-5">
         <div class="card shadow">
             <div class="card-header bg-primary text-white text-center">
-                <h3><i class="fas fa-sign-in-alt"></i> Connexion</h3>
+                <h3><i class="fas fa-sign-in-alt"></i> {% trans "Connexion" %}</h3>
             </div>
             <div class="card-body">
                 {% if form.errors %}
                 <div class="alert alert-danger">
-                    <i class="fas fa-exclamation-circle"></i> Nom d'utilisateur ou mot de passe incorrect.
+                    <i class="fas fa-exclamation-circle"></i> {% trans "Nom d'utilisateur ou mot de passe incorrect." %}
                 </div>
                 {% endif %}
                 
                 <form method="post">
                     {% csrf_token %}
                     <div class="mb-3">
-                        <label class="form-label">Nom d'utilisateur</label>
+                        <label class="form-label">{% trans "Nom d'utilisateur" %}</label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                             <input type="text" name="username" class="form-control" required>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Mot de passe</label>
+                        <label class="form-label">{% trans "Mot de passe" %}</label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="fas fa-lock"></i></span>
                             <input type="password" name="password" class="form-control" required>
@@ -34,17 +35,17 @@
                     </div>
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-sign-in-alt"></i> Se connecter
+                            <i class="fas fa-sign-in-alt"></i> {% trans "Se connecter" %}
                         </button>
                     </div>
                 </form>
                 <hr>
                 <p class="text-center mb-0">
-                    Pas encore de compte ? <a href="{% url 'register' %}">Créer un compte</a>
+                    {% trans "Pas encore de compte" %} ? <a href="{% url 'register' %}">{% trans "Créer un compte" %}</a>
                 </p>
             </div>
             <div class="card-footer text-muted text-center">
-                <small>Application de Gestion de Stock - ENSAM-Meknès</small>
+                <small>{% trans "Application de Gestion de Stock" %} - ENSAM-Meknès</small>
             </div>
         </div>
     </div>

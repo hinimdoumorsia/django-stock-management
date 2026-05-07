@@ -1,13 +1,14 @@
 {% extends 'inventory/base.html' %}
+{% load i18n %}
 
-{% block title %}Liste des produits{% endblock %}
+{% block title %}{% trans "Liste des produits" %}{% endblock %}
 
 {% block content %}
 <h1 class="mb-4">
-    <i class="fas fa-boxes"></i> Liste des produits
+    <i class="fas fa-boxes"></i> {% trans "Liste des produits" %}
     {% if is_admin %}
     <a href="{% url 'product_create' %}" class="btn btn-success float-end">
-        <i class="fas fa-plus"></i> Nouveau produit
+        <i class="fas fa-plus"></i> {% trans "Nouveau produit" %}
     </a>
     {% endif %}
 </h1>
@@ -15,16 +16,16 @@
 <!-- Formulaire de filtre et recherche -->
 <form method="get" class="row g-3 mb-4 p-3 bg-light rounded">
     <div class="col-md-4">
-        <label class="form-label">Recherche</label>
+        <label class="form-label">{% trans "Recherche" %}</label>
         <div class="input-group">
             <span class="input-group-text"><i class="fas fa-search"></i></span>
-            <input type="text" name="q" value="{{ query }}" class="form-control" placeholder="Nom ou description...">
+            <input type="text" name="q" value="{{ query }}" class="form-control" placeholder="{% trans 'Nom ou description...' %}">
         </div>
     </div>
     <div class="col-md-3">
-        <label class="form-label">Catégorie</label>
+        <label class="form-label">{% trans "Catégorie" %}</label>
         <select name="category" class="form-select">
-            <option value="">Toutes les catégories</option>
+            <option value="">{% trans "Toutes les catégories" %}</option>
             {% for cat in categories %}
             <option value="{{ cat.id }}" {% if category_id == cat.id|stringformat:"s" %}selected{% endif %}>
                 {{ cat.name }}
@@ -33,18 +34,18 @@
         </select>
     </div>
     <div class="col-md-3">
-        <label class="form-label">Trier par</label>
+        <label class="form-label">{% trans "Trier par" %}</label>
         <select name="sort" class="form-select">
-            <option value="name" {% if sort == 'name' %}selected{% endif %}>Nom (A-Z)</option>
-            <option value="price_asc" {% if sort == 'price_asc' %}selected{% endif %}>Prix (croissant)</option>
-            <option value="price_desc" {% if sort == 'price_desc' %}selected{% endif %}>Prix (décroissant)</option>
-            <option value="stock_asc" {% if sort == 'stock_asc' %}selected{% endif %}>Stock (croissant)</option>
-            <option value="stock_desc" {% if sort == 'stock_desc' %}selected{% endif %}>Stock (décroissant)</option>
+            <option value="name" {% if sort == 'name' %}selected{% endif %}>{% trans "Nom (A-Z)" %}</option>
+            <option value="price_asc" {% if sort == 'price_asc' %}selected{% endif %}>{% trans "Prix (croissant)" %}</option>
+            <option value="price_desc" {% if sort == 'price_desc' %}selected{% endif %}>{% trans "Prix (décroissant)" %}</option>
+            <option value="stock_asc" {% if sort == 'stock_asc' %}selected{% endif %}>{% trans "Stock (croissant)" %}</option>
+            <option value="stock_desc" {% if sort == 'stock_desc' %}selected{% endif %}>{% trans "Stock (décroissant)" %}</option>
         </select>
     </div>
     <div class="col-md-2 d-flex align-items-end">
         <button type="submit" class="btn btn-primary w-100">
-            <i class="fas fa-filter"></i> Filtrer
+            <i class="fas fa-filter"></i> {% trans "Filtrer" %}
         </button>
     </div>
 </form>
@@ -70,15 +71,15 @@
                     </p>
                     <p>
                         {% if product.stock_status == 'rupture' %}
-                        <span class="badge stock-badge-rupture"><i class="fas fa-times-circle"></i> Rupture</span>
+                        <span class="badge stock-badge-rupture"><i class="fas fa-times-circle"></i> {% trans "Rupture" %}</span>
                         {% elif product.stock_status == 'faible' %}
-                        <span class="badge stock-badge-faible"><i class="fas fa-exclamation-triangle"></i> Stock: {{ product.stock }}</span>
+                        <span class="badge stock-badge-faible"><i class="fas fa-exclamation-triangle"></i> {% trans "Stock" %}: {{ product.stock }}</span>
                         {% else %}
-                        <span class="badge stock-badge-normal"><i class="fas fa-check-circle"></i> Stock: {{ product.stock }}</span>
+                        <span class="badge stock-badge-normal"><i class="fas fa-check-circle"></i> {% trans "Stock" %}: {{ product.stock }}</span>
                         {% endif %}
                     </p>
                     <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-primary btn-sm">
-                        <i class="fas fa-eye"></i> Détail
+                        <i class="fas fa-eye"></i> {% trans "Détail" %}
                     </a>
                 </div>
             </div>
@@ -88,12 +89,12 @@
 
     <!-- Pagination -->
     {% if page_obj.has_other_pages %}
-    <nav aria-label="Page navigation" class="mt-4">
+    <nav aria-label="{% trans 'Page navigation' %}" class="mt-4">
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
             <li class="page-item">
                 <a class="page-link" href="?page={{ page_obj.previous_page_number }}&q={{ query }}&category={{ category_id }}&sort={{ sort }}">
-                    <i class="fas fa-chevron-left"></i> Précédent
+                    <i class="fas fa-chevron-left"></i> {% trans "Précédent" %}
                 </a>
             </li>
             {% endif %}
@@ -107,7 +108,7 @@
             {% if page_obj.has_next %}
             <li class="page-item">
                 <a class="page-link" href="?page={{ page_obj.next_page_number }}&q={{ query }}&category={{ category_id }}&sort={{ sort }}">
-                    Suivant <i class="fas fa-chevron-right"></i>
+                    {% trans "Suivant" %} <i class="fas fa-chevron-right"></i>
                 </a>
             </li>
             {% endif %}
@@ -116,7 +117,7 @@
     {% endif %}
 {% else %}
     <div class="alert alert-info text-center">
-        <i class="fas fa-info-circle"></i> Aucun produit trouvé.
+        <i class="fas fa-info-circle"></i> {% trans "Aucun produit trouvé." %}
     </div>
 {% endif %}
 {% endblock %}

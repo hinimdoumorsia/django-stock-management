@@ -1,29 +1,30 @@
 {% extends 'inventory/base.html' %}
+{% load i18n %}
 
-{% block title %}Supprimer {{ category.name }}{% endblock %}
+{% block title %}{% trans "Supprimer" %} {{ category.name }}{% endblock %}
 
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-md-6">
         <div class="card shadow border-danger">
             <div class="card-header bg-danger text-white">
-                <h4 class="mb-0"><i class="fas fa-exclamation-triangle"></i> Confirmation de suppression</h4>
+                <h4 class="mb-0"><i class="fas fa-exclamation-triangle"></i> {% trans "Confirmation de suppression" %}</h4>
             </div>
             <div class="card-body">
-                <p class="fs-5">Êtes-vous sûr de vouloir supprimer la catégorie suivante ?</p>
+                <p class="fs-5">{% trans "Êtes-vous sûr de vouloir supprimer la catégorie suivante ?" %}</p>
                 <div class="alert alert-warning">
                     <strong>{{ category.name }}</strong>
                 </div>
-                <p class="text-danger">⚠️ Cette action est irréversible !</p>
+                <p class="text-danger">⚠️ {% trans "Cette action est irréversible" %} !</p>
                 
                 <form method="post">
                     {% csrf_token %}
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="{% url 'category_list' %}" class="btn btn-secondary">
-                            <i class="fas fa-times"></i> Annuler
+                            <i class="fas fa-times"></i> {% trans "Annuler" %}
                         </a>
                         <button type="submit" class="btn btn-danger">
-                            <i class="fas fa-trash"></i> Confirmer la suppression
+                            <i class="fas fa-trash"></i> {% trans "Confirmer la suppression" %}
                         </button>
                     </div>
                 </form>

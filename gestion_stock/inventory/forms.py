@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+from django.utils.translation import gettext_lazy as _
 from .models import Category, Product
 from .models import Category, Product, Profile
 
@@ -9,15 +10,19 @@ class CategoryForm(forms.ModelForm):
     class Meta:
         model = Category
         fields = ['name', 'description']
+        labels = {
+            'name': _('Nom'),
+            'description': _('Description'),
+        }
         widgets = {
             'name': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Nom de la catégorie'
+                'placeholder': _('Nom de la catégorie')
             }),
             'description': forms.Textarea(attrs={
                 'class': 'form-control',
                 'rows': 3,
-                'placeholder': 'Description de la catégorie (optionnelle)'
+                'placeholder': _('Description de la catégorie (optionnelle)')
             }),
         }
 
@@ -26,24 +31,32 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = ['name', 'description', 'price', 'stock', 'photo', 'category']
+        labels = {
+            'name': _('Nom du produit'),
+            'description': _('Description'),
+            'price': _('Prix'),
+            'stock': _('Stock disponible'),
+            'photo': _('Photo'),
+            'category': _('Catégorie'),
+        }
         widgets = {
             'name': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Nom du produit'
+                'placeholder': _('Nom du produit')
             }),
             'description': forms.Textarea(attrs={
                 'class': 'form-control',
                 'rows': 4,
-                'placeholder': 'Description détaillée du produit'
+                'placeholder': _('Description détaillée du produit')
             }),
             'price': forms.NumberInput(attrs={
                 'class': 'form-control',
                 'step': '0.01',
-                'placeholder': 'Prix en DH'
+                'placeholder': _('Prix en DH')
             }),
             'stock': forms.NumberInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Quantité en stock'
+                'placeholder': _('Quantité en stock')
             }),
             'photo': forms.ClearableFileInput(attrs={
                 'class': 'form-control'
@@ -53,63 +66,76 @@ class ProductForm(forms.ModelForm):
             }),
         }
 
-# ============ Formulaire d'inscription utilisateur (NOUVEAU) ============
-# Ce formulaire permet aux nouveaux utilisateurs de créer un compte
-# Il hérite de UserCreationForm qui gère déjà les mots de passe
+# ============ Formulaire d'inscription utilisateur ============
 class UserRegistrationForm(UserCreationForm):
-    # Champ email obligatoire pour la confirmation
     email = forms.EmailField(required=True, widget=forms.EmailInput(attrs={
         'class': 'form-control',
-        'placeholder': 'exemple@email.com'
+        'placeholder': _('exemple@email.com')
     }))
     
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
+        labels = {
+            'username': _("Nom d'utilisateur"),
+            'email': _('Email'),
+            'password1': _('Mot de passe'),
+            'password2': _('Confirmation du mot de passe'),
+        }
         widgets = {
             'username': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': "Nom d'utilisateur"
+                'placeholder': _("Nom d'utilisateur")
             }),
         }
     
-    # Validation personnalisée pour vérifier que l'email n'est pas déjà utilisé
     def clean_email(self):
         email = self.cleaned_data.get('email')
         if User.objects.filter(email=email).exists():
-            raise forms.ValidationError("Cet email est déjà utilisé.")
+            raise forms.ValidationError(_("Cet email est déjà utilisé."))
         return email
-    
 
-    # ============ NOUVEAU : Formulaire de modification du profil ============
+# ============ Formulaire de modification du profil ============
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ['username', 'email', 'first_name', 'last_name']
+        labels = {
+            'username': _("Nom d'utilisateur"),
+            'email': _('Email'),
+            'first_name': _('Prénom'),
+            'last_name': _('Nom'),
+        }
         widgets = {
             'username': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': "Nom d'utilisateur"
+                'placeholder': _("Nom d'utilisateur")
             }),
             'email': forms.EmailInput(attrs={
                 'class': 'form-control',
-                'placeholder': "Email"
+                'placeholder': _("Email")
             }),
             'first_name': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': "Prénom"
+                'placeholder': _("Prénom")
             }),
             'last_name': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': "Nom"
+                'placeholder': _("Nom")
             }),
         }
 
-        # ============ NOUVEAU : Formulaire pour la photo de profil et infos supplémentaires ============
+# ============ Formulaire pour la photo de profil et infos supplémentaires ============
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['photo', 'bio', 'phone', 'address']
+        labels = {
+            'photo': _('Photo de profil'),
+            'bio': _('Bio'),
+            'phone': _('Téléphone'),
+            'address': _('Adresse'),
+        }
         widgets = {
             'photo': forms.ClearableFileInput(attrs={
                 'class': 'form-control'
@@ -117,14 +143,14 @@ class ProfileForm(forms.ModelForm):
             'bio': forms.Textarea(attrs={
                 'class': 'form-control',
                 'rows': 3,
-                'placeholder': 'Parlez-nous de vous...'
+                'placeholder': _('Parlez-nous de vous...')
             }),
             'phone': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Votre numéro de téléphone'
+                'placeholder': _('Votre numéro de téléphone')
             }),
             'address': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Votre adresse'
+                'placeholder': _('Votre adresse')
             }),
         }

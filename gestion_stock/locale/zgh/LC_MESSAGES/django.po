@@ -1,0 +1,577 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-07 02:12+0100\n"
+"PO-Revision-Date: 2026-05-07 00:47+0100\n"
+"Last-Translator: ADMIN <admin@localhost>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zgh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\gestion_stock\settings.py:81
+msgid "Français"
+msgstr "ⵜⴰⴼⵔⴰⵏⵙⵉⵙⵜ"
+
+#: .\gestion_stock\settings.py:82
+msgid "English"
+msgstr "ⵜⴰⵏⴳⵍⵉⵣⵉⵜ"
+
+#: .\gestion_stock\settings.py:83
+msgid "العربية"
+msgstr "ⵜⴰⵄⵔⴰⴱⵜ"
+
+#: .\gestion_stock\settings.py:84
+msgid "中文 (简体)"
+msgstr "ⵜⴰⵛⵉⵏⵡⵉⵜ"
+
+#: .\gestion_stock\settings.py:85
+msgid "ⵜⴰⵎⴰⵣⵉⵖⵜ"
+msgstr "ⵜⴰⵎⴰⵣⵉⵖⵜ"
+
+#: .\inventory\forms.py:14 .\inventory\forms.py:107 .\inventory\forms.py:124
+#: .\templates\inventory\category_list.html:20
+#: .\templates\inventory\user_profile.html:71
+msgid "Nom"
+msgstr "ⵉⵙⵎ"
+
+#: .\inventory\forms.py:15 .\inventory\forms.py:36
+#: .\templates\inventory\category_list.html:21
+#: .\templates\inventory\product_detail.html:50
+#: .\templates\inventory\user_history.html:64
+msgid "Description"
+msgstr "ⴰⵙⴰⴳⵓⵔ"
+
+#: .\inventory\forms.py:20
+msgid "Nom de la catégorie"
+msgstr "ⵉⵙⵎ ⵏ ⵜⵙⵏⴰ"
+
+#: .\inventory\forms.py:25
+msgid "Description de la catégorie (optionnelle)"
+msgstr "ⴰⵙⴰⴳⵓⵔ ⵏ ⵜⵙⵏⴰ (ⴰⵙⵜⵉⵢ)"
+
+#: .\inventory\forms.py:35 .\inventory\forms.py:45
+msgid "Nom du produit"
+msgstr "ⵉⵙⵎ ⵏ ⵓⵎⵓⵔⴰⵔ"
+
+#: .\inventory\forms.py:37 .\templates\inventory\product_confirm_delete.html:17
+msgid "Prix"
+msgstr "ⴰⵣⵣⵔⴰⵢ"
+
+#: .\inventory\forms.py:38
+msgid "Stock disponible"
+msgstr "ⴰⵎⵣⵣⵓⴳⵣ ⵉⵍⵍⴰⵏ"
+
+#: .\inventory\forms.py:39
+msgid "Photo"
+msgstr "ⵜⴰⵡⵍⴰⴼⵜ"
+
+#: .\inventory\forms.py:40 .\templates\inventory\product_detail.html:28
+#: .\templates\inventory\product_list.html:26
+msgid "Catégorie"
+msgstr "ⴰⵙⵏⴰ"
+
+#: .\inventory\forms.py:50
+msgid "Description détaillée du produit"
+msgstr "ⴰⵙⴰⴳⵓⵔ ⵏ ⵓⵎⵓⵔⴰⵔ"
+
+#: .\inventory\forms.py:55
+msgid "Prix en DH"
+msgstr "ⴰⵣⵣⵔⴰⵢ ⵙ ⴷⵉⵔⵀⴰⵎ"
+
+#: .\inventory\forms.py:59
+msgid "Quantité en stock"
+msgstr "ⴰⵎⵣⵣⵓⴳⵣ"
+
+#: .\inventory\forms.py:73
+msgid "exemple@email.com"
+msgstr "amnad@email.com"
+
+#: .\inventory\forms.py:80 .\inventory\forms.py:88 .\inventory\forms.py:104
+#: .\inventory\forms.py:112 .\templates\inventory\registration\login.html:23
+#: .\templates\inventory\user_profile.html:59
+msgid "Nom d'utilisateur"
+msgstr "ⵉⵙⵎ ⵏ ⵓⵎⵙⵙⵎⵔⵙ"
+
+#: .\inventory\forms.py:81 .\inventory\forms.py:105 .\inventory\forms.py:116
+#: .\templates\inventory\user_profile.html:63
+msgid "Email"
+msgstr "ⵉⵎⵉⵍ"
+
+#: .\inventory\forms.py:82 .\templates\inventory\registration\login.html:30
+msgid "Mot de passe"
+msgstr "ⵜⴰⵡⴰⵍⵜ ⵏ ⵖⴰⵜⴰ"
+
+#: .\inventory\forms.py:83
+msgid "Confirmation du mot de passe"
+msgstr "ⴰⵙⵙⵖⵏⵉ ⵏ ⵜⴰⵡⴰⵍⵜ"
+
+#: .\inventory\forms.py:95
+msgid "Cet email est déjà utilisé."
+msgstr "ⵉⵎⵉⵍ ⴰⴷ ⵉⵜⵜⵓⵙⵎⵔⵙ ⵙⴰⵡⵍ"
+
+#: .\inventory\forms.py:106 .\inventory\forms.py:120
+#: .\templates\inventory\user_profile.html:67
+msgid "Prénom"
+msgstr "ⵉⵙⵎ ⴰⵎⵣⵡⴰⵔⵓ"
+
+#: .\inventory\forms.py:134 .\templates\inventory\user_profile.html:16
+#: .\templates\inventory\user_profile_edit.html:16
+msgid "Photo de profil"
+msgstr "ⵜⴰⵡⵍⴰⴼⵜ ⵏ ⵓⵎⵓⴷ"
+
+#: .\inventory\forms.py:135 .\templates\inventory\user_profile.html:83
+msgid "Bio"
+msgstr "ⵜⵓⴷⴷⵓ"
+
+#: .\inventory\forms.py:136 .\templates\inventory\user_profile.html:75
+msgid "Téléphone"
+msgstr "ⴰⵙⴰⵡⴰⵍ"
+
+#: .\inventory\forms.py:137 .\templates\inventory\user_profile.html:79
+msgid "Adresse"
+msgstr "ⴰⴷⵔⴻⵙ"
+
+#: .\inventory\forms.py:146
+msgid "Parlez-nous de vous..."
+msgstr "ⴰⵡⵉⵙ ⵖⴰⴼ ⵉⵎⴰⵏ ⵏⵏⴽ"
+
+#: .\inventory\forms.py:150
+msgid "Votre numéro de téléphone"
+msgstr "ⵓⵟⵟⵓⵏ ⵏ ⵓⵜⵉⵍⵉⴼⵓⵏ ⵏⵏⴽ"
+
+#: .\inventory\forms.py:154
+msgid "Votre adresse"
+msgstr "ⴰⴷⵔⵉⵙ ⵏⵏⴽ"
+
+#: .\templates\inventory\base.html:7 .\templates\inventory\base.html:107
+#: .\templates\inventory\base.html:202
+msgid "Gestion de Stock"
+msgstr "ⴰⵙⵡⵡⵓⵔⵉ ⵏ ⵓⵎⵣⵣⵓⴳⵣ"
+
+#: .\templates\inventory\base.html:116 .\templates\inventory\base.html:208
+msgid "Produits"
+msgstr "ⵉⵎⵓⵔⴰⵔ"
+
+#: .\templates\inventory\base.html:122 .\templates\inventory\base.html:210
+msgid "Catégories"
+msgstr "ⵜⴰⵙⵏⵉⵡⵉⵏ"
+
+#: .\templates\inventory\base.html:129
+msgid "Ajouter produit"
+msgstr "ⵔⵏⵓ ⴰⵎⵓⵔⴰⵔ"
+
+#: .\templates\inventory\base.html:136
+msgid "Ajouter catégorie"
+msgstr "ⵔⵏⵓ ⵜⴰⵙⵏⴰ"
+
+#: .\templates\inventory\base.html:153
+#: .\templates\inventory\user_profile.html:26
+#: .\templates\inventory\user_profile.html:90
+#: .\templates\inventory\user_profile_edit.html:26
+msgid "Superadmin"
+msgstr "ⴰⵏⵙⵙⵉⵅⴼ ⴰⵎⵇⵔⴰⵏ"
+
+#: .\templates\inventory\base.html:155
+#: .\templates\inventory\user_profile.html:28
+#: .\templates\inventory\user_profile.html:92
+#: .\templates\inventory\user_profile_edit.html:28
+msgid "Admin"
+msgstr "ⴰⵏⵙⵙⵉⵅⴼ"
+
+#: .\templates\inventory\base.html:157
+#: .\templates\inventory\user_profile.html:30
+#: .\templates\inventory\user_profile.html:94
+#: .\templates\inventory\user_profile_edit.html:30
+msgid "Utilisateur"
+msgstr "ⴰⵎⵙⵙⵎⵔⵙ"
+
+#: .\templates\inventory\base.html:162 .\templates\inventory\base.html:212
+#: .\templates\inventory\user_change_password.html:15
+#: .\templates\inventory\user_history.html:15
+#: .\templates\inventory\user_profile.html:4
+#: .\templates\inventory\user_profile.html:36
+#: .\templates\inventory\user_profile_edit.html:36
+msgid "Mon profil"
+msgstr "ⴰⵎⵓⴷ ⵉⵏⵓ"
+
+#: .\templates\inventory\base.html:165
+#: .\templates\inventory\user_change_password.html:24
+#: .\templates\inventory\user_history.html:4
+#: .\templates\inventory\user_history.html:24
+#: .\templates\inventory\user_profile.html:45
+#: .\templates\inventory\user_profile_edit.html:45
+msgid "Mon historique"
+msgstr "ⴰⵎⵣⵔⵓⵢ ⵉⵏⵓ"
+
+#: .\templates\inventory\base.html:172
+#: .\templates\inventory\registration\logout.html:4
+#: .\templates\inventory\registration\logout.html:11
+#: .\templates\inventory\user_history.html:76
+msgid "Déconnexion"
+msgstr "ⴰⴼⵓⵖ"
+
+#: .\templates\inventory\base.html:203
+msgid ""
+"Application complète de gestion de stock des produits. Gérez facilement vos "
+"produits, catégories et stocks."
+msgstr ""
+"ⴰⵙⵍⴳⵏ ⴰⴽⴷⵓⵔⴰⵏ ⵏ ⵓⵙⵡⵡⵓⵔⵉ ⵏ ⵓⵎⵣⵣⵓⴳⵣ. ⵙⵡⵡⵓⵔⵉ ⴰⵣⴳⵣⴰⵍ ⵉⵎⵓⵔⴰⵔ ⵏⵏⴽ, ⵜⴰⵙⵏⵉⵡⵉⵏ ⴷ "
+"ⵓⵎⵣⵣⵓⴳⵣ"
+
+#: .\templates\inventory\base.html:206
+msgid "Liens rapides"
+msgstr "ⵉⵙⵖⵏⵏⵉⵜⵏ ⵉⵔⵡⴰⵙⵏ"
+
+#: .\templates\inventory\base.html:213
+msgid "Historique"
+msgstr "ⴰⵎⵣⵔⵓⵢ"
+
+#: .\templates\inventory\base.html:217
+msgid "Suivez-moi"
+msgstr "ⴷⴰⴼⴼⵔ-ⵉ"
+
+#: .\templates\inventory\base.html:226
+#: .\templates\inventory\registration\login.html:48
+msgid "Application de Gestion de Stock"
+msgstr "ⴰⵙⵍⴳⵏ ⵏ ⵓⵙⵡⵡⵓⵔⵉ ⵏ ⵓⵎⵣⵣⵓⴳⵣ"
+
+#: .\templates\inventory\category_confirm_delete.html:4
+#: .\templates\inventory\product_confirm_delete.html:4
+#: .\templates\inventory\product_detail.html:66
+msgid "Supprimer"
+msgstr "ⴽⴽⵙ"
+
+#: .\templates\inventory\category_confirm_delete.html:11
+#: .\templates\inventory\product_confirm_delete.html:11
+msgid "Confirmation de suppression"
+msgstr "ⴰⵙⵙⵖⵏⵉ ⵏ ⵓⴽⴽⵙ"
+
+#: .\templates\inventory\category_confirm_delete.html:14
+msgid "Êtes-vous sûr de vouloir supprimer la catégorie suivante ?"
+msgstr "ⵜⵓⵖⴰⵍⵉⵜ ⴰⴷ ⵜⴰⵡⵙ ⵏ ⵜⵙⵏⴰ ⴰ?"
+
+#: .\templates\inventory\category_confirm_delete.html:18
+#: .\templates\inventory\product_confirm_delete.html:19
+msgid "Cette action est irréversible"
+msgstr "ⵜⵉⵡⵉⵙⵉ ⴰⴷ ⵓⵔ ⵜⵓⵖⴰⵍⵉ"
+
+#: .\templates\inventory\category_confirm_delete.html:24
+#: .\templates\inventory\category_form.html:33
+#: .\templates\inventory\product_confirm_delete.html:25
+#: .\templates\inventory\product_form.html:36
+#: .\templates\inventory\user_change_password.html:58
+#: .\templates\inventory\user_profile_edit.html:97
+msgid "Annuler"
+msgstr "ⵙⵔⵙ"
+
+#: .\templates\inventory\category_confirm_delete.html:27
+#: .\templates\inventory\product_confirm_delete.html:28
+msgid "Confirmer la suppression"
+msgstr "ⵙⵙⵖⵏ ⴰⴽⴽⵙ"
+
+#: .\templates\inventory\category_form.html:36
+#: .\templates\inventory\product_form.html:39
+#: .\templates\inventory\user_profile_edit.html:100
+msgid "Enregistrer"
+msgstr "ⵙⵍⴽⵎ"
+
+#: .\templates\inventory\category_list.html:4
+#: .\templates\inventory\category_list.html:8
+msgid "Gestion des catégories"
+msgstr "ⴰⵙⵡⵡⵓⵔⵉ ⵏ ⵜⵙⵏⵉⵡⵉⵏ"
+
+#: .\templates\inventory\category_list.html:10
+msgid "Nouvelle catégorie"
+msgstr "ⵜⴰⵙⵏⴰ ⵜⴰⵎⴰⵢⵏⵓⵜ"
+
+#: .\templates\inventory\category_list.html:22
+msgid "Nombre de produits"
+msgstr "ⴰⵎⵖⵔⴰⴷ ⵏ ⵉⵎⵓⵔⴰⵔ"
+
+#: .\templates\inventory\category_list.html:23
+msgid "Date création"
+msgstr "ⴰⵙⴰⴽⵓⴷ ⵏ ⵓⵙⵏⴰⵔⴰ"
+
+#: .\templates\inventory\category_list.html:24
+msgid "Actions"
+msgstr "ⵜⵉⵡⵉⵙⵉⵏ"
+
+#: .\templates\inventory\category_list.html:45
+msgid "Impossible de supprimer - catégorie contient des produits"
+msgstr "ⵓⵔ ⵉⵣⵎⵉⵔ ⴰⴽⴽⵙ - ⵜⴰⵙⵏⴰ ⵜⵓⵙⵉ ⵉⵎⵓⵔⴰⵔ"
+
+#: .\templates\inventory\category_list.html:53
+msgid "Aucune catégorie trouvée."
+msgstr "ⵓⵔ ⵜⵍⵍⵉ ⵜⴰⵙⵏⴰ"
+
+#: .\templates\inventory\product_confirm_delete.html:14
+msgid "Êtes-vous sûr de vouloir supprimer le produit suivant ?"
+msgstr "ⵜⵓⵖⴰⵍⵉⵜ ⴰⴷ ⵜⴰⵡⵙ ⵏ ⵓⵎⵓⵔⴰⵔ ⴰ?"
+
+#: .\templates\inventory\product_confirm_delete.html:17
+#: .\templates\inventory\product_list.html:76
+#: .\templates\inventory\product_list.html:78
+msgid "Stock"
+msgstr "ⴰⵎⵣⵣⵓⴳⵣ"
+
+#: .\templates\inventory\product_detail.html:10
+msgid "Retour à la liste"
+msgstr "ⵓⵖⴰⵍ ⵙ ⵓⵎⵓⵖ"
+
+#: .\templates\inventory\product_detail.html:37
+msgid "Rupture de stock"
+msgstr "ⴰⵎⵣⵣⵓⴳⵣ ⵉⵏⴼⴰⴷ"
+
+#: .\templates\inventory\product_detail.html:41
+msgid "Stock faible"
+msgstr "ⴰⵎⵣⵣⵓⴳⵣ ⵉⵎⵥⵥⵉⵢⵏ"
+
+#: .\templates\inventory\product_detail.html:41
+#: .\templates\inventory\product_detail.html:45
+msgid "unités"
+msgstr "ⵉⵢⵢⵉⴷⵏ"
+
+#: .\templates\inventory\product_detail.html:45
+msgid "En stock"
+msgstr "ⵉⵍⵍⴰ ⴳ ⵓⵎⵣⵣⵓⴳⵣ"
+
+#: .\templates\inventory\product_detail.html:54
+msgid "Créé le"
+msgstr "ⵉⵜⵜⵓⵙⵏⴰⵔⴰ ⴳ"
+
+#: .\templates\inventory\product_detail.html:55
+msgid "Dernière modification"
+msgstr "ⴰⵙⵏⴼⵍ ⴰⵏⴳⴳⴰⵔⵓ"
+
+#: .\templates\inventory\product_detail.html:63
+msgid "Modifier"
+msgstr "ⵙⵏⴼⵍ"
+
+#: .\templates\inventory\product_list.html:4
+#: .\templates\inventory\product_list.html:8
+msgid "Liste des produits"
+msgstr "ⵓⵎⵓⵖ ⵏ ⵉⵎⵓⵔⴰⵔ"
+
+#: .\templates\inventory\product_list.html:11
+msgid "Nouveau produit"
+msgstr "ⴰⵎⵓⵔⴰⵔ ⴰⵎⴰⵢⵏⵓ"
+
+#: .\templates\inventory\product_list.html:19
+#: .\templates\inventory\user_history.html:86
+msgid "Recherche"
+msgstr "ⴰⵔⵣⵣⵓ"
+
+#: .\templates\inventory\product_list.html:22
+msgid "Nom ou description..."
+msgstr "ⵉⵙⵎ ⵏⵖ ⴰⵙⴰⴳⵓⵔ"
+
+#: .\templates\inventory\product_list.html:28
+msgid "Toutes les catégories"
+msgstr "ⴰⴽⴽ ⵉⵙⵏⴰⵡⵏ"
+
+#: .\templates\inventory\product_list.html:37
+msgid "Trier par"
+msgstr "ⵙⴷⴰⵔⴷ ⵙ"
+
+#: .\templates\inventory\product_list.html:39
+msgid "Nom (A-Z)"
+msgstr "ⵉⵙⵎ (A-Z)"
+
+#: .\templates\inventory\product_list.html:40
+msgid "Prix (croissant)"
+msgstr "ⴰⵣⵣⵔⴰⵢ (ⵉⵍⵉⵏ)"
+
+#: .\templates\inventory\product_list.html:41
+msgid "Prix (décroissant)"
+msgstr "ⴰⵣⵣⵔⴰⵢ (ⵉⴷⴷⵔⵓⵏ)"
+
+#: .\templates\inventory\product_list.html:42
+msgid "Stock (croissant)"
+msgstr "ⴰⵎⵣⵣⵓⴳⵣ (ⵉⵍⵉⵏ)"
+
+#: .\templates\inventory\product_list.html:43
+msgid "Stock (décroissant)"
+msgstr "ⴰⵎⵣⵣⵓⴳⵣ (ⵉⴷⴷⵔⵓⵏ)"
+
+#: .\templates\inventory\product_list.html:48
+#: .\templates\inventory\user_history.html:51
+msgid "Filtrer"
+msgstr "ⵙⵜⵏⵏ"
+
+#: .\templates\inventory\product_list.html:74
+msgid "Rupture"
+msgstr "ⴰⵎⵣⵣⵓⴳⵣ ⵉⵏⴼⴰⴷ"
+
+#: .\templates\inventory\product_list.html:82
+msgid "Détail"
+msgstr "ⴰⴼⵔⴷⵉⵙ"
+
+#: .\templates\inventory\product_list.html:92
+msgid "Page navigation"
+msgstr "ⴰⵙⵖⵏⵉ ⵏ ⵓⵙⵏⴰⵔ"
+
+#: .\templates\inventory\product_list.html:97
+#: .\templates\inventory\user_history.html:110
+msgid "Précédent"
+msgstr "ⵓⵖⴰⵍ ⴰⵎⵣⵡⴰⵔⵓ"
+
+#: .\templates\inventory\product_list.html:111
+#: .\templates\inventory\user_history.html:124
+msgid "Suivant"
+msgstr "ⵓⵖⴰⵍ ⵉⴷⴷⴰⵢ"
+
+#: .\templates\inventory\product_list.html:120
+msgid "Aucun produit trouvé."
+msgstr "ⵓⵔ ⵉⵍⵍⵉ ⵓⵎⵓⵔⴰⵔ"
+
+#: .\templates\inventory\registration\login.html:4
+#: .\templates\inventory\registration\login.html:11
+#: .\templates\inventory\user_history.html:74
+msgid "Connexion"
+msgstr "ⴰⴽⵛⵛⵎ"
+
+#: .\templates\inventory\registration\login.html:16
+msgid "Nom d'utilisateur ou mot de passe incorrect."
+msgstr "ⵉⵙⵎ ⵏ ⵓⵎⵙⵙⵎⵔⵙ ⵏⵖ ⵜⴰⵡⴰⵍⵜ ⵏ ⵖⴰⵜⴰ"
+
+#: .\templates\inventory\registration\login.html:38
+msgid "Se connecter"
+msgstr "ⴽⵛⵛⵎ"
+
+#: .\templates\inventory\registration\login.html:44
+msgid "Pas encore de compte"
+msgstr "ⵓⵔ ⴰⵢ ⵍⵍⵉⵖ ⴰⵎⵓⴷ"
+
+#: .\templates\inventory\registration\login.html:44
+#: .\templates\inventory\registration\register.html:11
+msgid "Créer un compte"
+msgstr "ⵙⵏⴰ ⴰⵎⵓⴷ"
+
+#: .\templates\inventory\registration\logout.html:14
+msgid "Vous avez été déconnecté avec succès."
+msgstr "ⵜⴼⵔⴰⵙⵜ ⵙ ⵓⵎⵢⴰ"
+
+#: .\templates\inventory\registration\logout.html:16
+msgid "Se reconnecter"
+msgstr "ⴽⵛⵛⵎ ⴰⴳⵍⵏⴰⵡ"
+
+#: .\templates\inventory\registration\register.html:4
+msgid "Inscription"
+msgstr "ⴰⵣⵎⵎⵉⵎ"
+
+#: .\templates\inventory\registration\register.html:36
+msgid "S'inscrire"
+msgstr "ⵙⵏⴰ ⴰⵎⵓⴷ"
+
+#: .\templates\inventory\registration\register.html:42
+msgid "Déjà un compte"
+msgstr "ⵇⴰⴱⵍ ⴰⵢ ⵍⵍⵉⵖ ⴰⵎⵓⴷ"
+
+#: .\templates\inventory\registration\register.html:42
+msgid "Connectez-vous"
+msgstr "ⴽⵛⵛⵎ ⴷⴰ"
+
+#: .\templates\inventory\user_change_password.html:4
+#: .\templates\inventory\user_change_password.html:21
+#: .\templates\inventory\user_change_password.html:33
+#: .\templates\inventory\user_history.html:21
+#: .\templates\inventory\user_profile.html:42
+#: .\templates\inventory\user_profile_edit.html:42
+msgid "Changer mon mot de passe"
+msgstr "ⴱⴰⴷⴷⴻⵍ ⵜⴰⵡⴰⵍⵜ ⵏ ⵖⴰⵜⴰ"
+
+#: .\templates\inventory\user_change_password.html:11
+#: .\templates\inventory\user_history.html:11
+#: .\templates\inventory\user_profile.html:11
+#: .\templates\inventory\user_profile_edit.html:11
+msgid "Menu"
+msgstr "ⵓⵎⵓⵖ"
+
+#: .\templates\inventory\user_change_password.html:18
+#: .\templates\inventory\user_history.html:18
+#: .\templates\inventory\user_profile.html:39
+#: .\templates\inventory\user_profile_edit.html:39
+#: .\templates\inventory\user_profile_edit.html:54
+msgid "Modifier mes informations"
+msgstr "ⴱⴰⴷⴷⴻⵍ ⵉⵏⵖⵎⵉⵙⵏ ⵉⵏⵓ"
+
+#: .\templates\inventory\user_change_password.html:61
+msgid "Changer le mot de passe"
+msgstr "ⴱⴰⴷⴷⴻⵍ ⵜⴰⵡⴰⵍⵜ"
+
+#: .\templates\inventory\user_history.html:33
+msgid "Historique des actions"
+msgstr "ⴰⵎⵣⵔⵓⵢ ⵏ ⵜⵡⵉⵙⵉⵏ"
+
+#: .\templates\inventory\user_history.html:41
+msgid "Toutes les actions"
+msgstr "ⴰⴽⴽ ⵜⵉⵡⵉⵙⵉⵏ"
+
+#: .\templates\inventory\user_history.html:62
+msgid "Date/Heure"
+msgstr "ⴰⵙⴰⴽⵓⴷ/ⵢⴰⵏ"
+
+#: .\templates\inventory\user_history.html:63
+msgid "Action"
+msgstr "ⵜⵉⵡⵉⵙⵉ"
+
+#: .\templates\inventory\user_history.html:65
+msgid "IP"
+msgstr "IP"
+
+#: .\templates\inventory\user_history.html:78
+msgid "Création"
+msgstr "ⴰⵙⵏⴰⵔⴰ"
+
+#: .\templates\inventory\user_history.html:80
+msgid "Modification"
+msgstr "ⴰⵙⵏⴼⵍ"
+
+#: .\templates\inventory\user_history.html:82
+msgid "Suppression"
+msgstr "ⴰⴽⴽⵙ"
+
+#: .\templates\inventory\user_history.html:84
+msgid "Consultation"
+msgstr "ⴰⴳⵔ"
+
+#: .\templates\inventory\user_history.html:96
+msgid "Aucun historique trouvé"
+msgstr "ⵓⵔ ⵉⵍⵍⵉ ⴰⵎⵣⵔⵓⵢ"
+
+#: .\templates\inventory\user_profile.html:54
+msgid "Informations personnelles"
+msgstr "ⵉⵏⵖⵎⵉⵙⵏ ⵓⵙⵙⵉⵏ"
+
+#: .\templates\inventory\user_profile.html:87
+msgid "Rôle"
+msgstr "ⴰⵡⴰⵏⴽ"
+
+#: .\templates\inventory\user_profile.html:99
+msgid "Date d'inscription"
+msgstr "ⴰⵙⴰⴽⵓⴷ ⵏ ⵓⵣⵎⵎⴻⵎ"
+
+#: .\templates\inventory\user_profile.html:103
+msgid "Dernière connexion"
+msgstr "ⴰⴽⵛⵛⵎ ⴰⵏⴳⴳⴰⵔⵓ"
+
+#: .\templates\inventory\user_profile_edit.html:4
+msgid "Modifier mon profil"
+msgstr "ⴱⴰⴷⴷⴻⵍ ⴰⵎⵓⴷ ⵉⵏⵓ"
+
+#: .\templates\inventory\user_profile_edit.html:60
+msgid "Informations du compte"
+msgstr "ⵉⵏⵖⵎⵉⵙⵏ ⵏ ⵓⵎⵓⴷ"
+
+#: .\templates\inventory\user_profile_edit.html:77
+msgid "Photo de profil et informations supplémentaires"
+msgstr "ⵜⴰⵡⵍⴰⴼⵜ ⵏ ⵓⵎⵓⴷ ⴷ ⵉⵏⵖⵎⵉⵙⵏ ⵉⵎⵣⴷⴰⵢⵏ"

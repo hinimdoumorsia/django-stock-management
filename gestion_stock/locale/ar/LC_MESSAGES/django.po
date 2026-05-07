@@ -1,0 +1,576 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-07 02:12+0100\n"
+"PO-Revision-Date: 2026-05-07 00:47+0100\n"
+"Last-Translator: ADMIN <admin@localhost>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#: .\gestion_stock\settings.py:81
+msgid "Français"
+msgstr "الفرنسية"
+
+#: .\gestion_stock\settings.py:82
+msgid "English"
+msgstr "الإنجليزية"
+
+#: .\gestion_stock\settings.py:83
+msgid "العربية"
+msgstr "العربية"
+
+#: .\gestion_stock\settings.py:84
+msgid "中文 (简体)"
+msgstr "الصينية المبسطة"
+
+#: .\gestion_stock\settings.py:85
+msgid "ⵜⴰⵎⴰⵣⵉⵖⵜ"
+msgstr "الأمازيغية"
+
+#: .\inventory\forms.py:14 .\inventory\forms.py:107 .\inventory\forms.py:124
+#: .\templates\inventory\category_list.html:20
+#: .\templates\inventory\user_profile.html:71
+msgid "Nom"
+msgstr "الاسم"
+
+#: .\inventory\forms.py:15 .\inventory\forms.py:36
+#: .\templates\inventory\category_list.html:21
+#: .\templates\inventory\product_detail.html:50
+#: .\templates\inventory\user_history.html:64
+msgid "Description"
+msgstr "الوصف"
+
+#: .\inventory\forms.py:20
+msgid "Nom de la catégorie"
+msgstr "اسم الفئة"
+
+#: .\inventory\forms.py:25
+msgid "Description de la catégorie (optionnelle)"
+msgstr "وصف الفئة (اختياري)"
+
+#: .\inventory\forms.py:35 .\inventory\forms.py:45
+msgid "Nom du produit"
+msgstr "اسم المنتج"
+
+#: .\inventory\forms.py:37 .\templates\inventory\product_confirm_delete.html:17
+msgid "Prix"
+msgstr "السعر"
+
+#: .\inventory\forms.py:38
+msgid "Stock disponible"
+msgstr "المخزون المتاح"
+
+#: .\inventory\forms.py:39
+msgid "Photo"
+msgstr "الصورة"
+
+#: .\inventory\forms.py:40 .\templates\inventory\product_detail.html:28
+#: .\templates\inventory\product_list.html:26
+msgid "Catégorie"
+msgstr "الفئة"
+
+#: .\inventory\forms.py:50
+msgid "Description détaillée du produit"
+msgstr "وصف مفصل للمنتج"
+
+#: .\inventory\forms.py:55
+msgid "Prix en DH"
+msgstr "السعر بالدرهم"
+
+#: .\inventory\forms.py:59
+msgid "Quantité en stock"
+msgstr "الكمية في المخزون"
+
+#: .\inventory\forms.py:73
+msgid "exemple@email.com"
+msgstr "example@email.com"
+
+#: .\inventory\forms.py:80 .\inventory\forms.py:88 .\inventory\forms.py:104
+#: .\inventory\forms.py:112 .\templates\inventory\registration\login.html:23
+#: .\templates\inventory\user_profile.html:59
+msgid "Nom d'utilisateur"
+msgstr "اسم المستخدم"
+
+#: .\inventory\forms.py:81 .\inventory\forms.py:105 .\inventory\forms.py:116
+#: .\templates\inventory\user_profile.html:63
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: .\inventory\forms.py:82 .\templates\inventory\registration\login.html:30
+msgid "Mot de passe"
+msgstr "كلمة المرور"
+
+#: .\inventory\forms.py:83
+msgid "Confirmation du mot de passe"
+msgstr "تأكيد كلمة المرور"
+
+#: .\inventory\forms.py:95
+msgid "Cet email est déjà utilisé."
+msgstr "هذا البريد الإلكتروني مستخدم بالفعل"
+
+#: .\inventory\forms.py:106 .\inventory\forms.py:120
+#: .\templates\inventory\user_profile.html:67
+msgid "Prénom"
+msgstr "الاسم الأول"
+
+#: .\inventory\forms.py:134 .\templates\inventory\user_profile.html:16
+#: .\templates\inventory\user_profile_edit.html:16
+msgid "Photo de profil"
+msgstr "صورة الملف الشخصي"
+
+#: .\inventory\forms.py:135 .\templates\inventory\user_profile.html:83
+msgid "Bio"
+msgstr "السيرة الذاتية"
+
+#: .\inventory\forms.py:136 .\templates\inventory\user_profile.html:75
+msgid "Téléphone"
+msgstr "الهاتف"
+
+#: .\inventory\forms.py:137 .\templates\inventory\user_profile.html:79
+msgid "Adresse"
+msgstr "العنوان"
+
+#: .\inventory\forms.py:146
+msgid "Parlez-nous de vous..."
+msgstr "حدثنا عن نفسك..."
+
+#: .\inventory\forms.py:150
+msgid "Votre numéro de téléphone"
+msgstr "رقم هاتفك"
+
+#: .\inventory\forms.py:154
+msgid "Votre adresse"
+msgstr "عنوانك"
+
+#: .\templates\inventory\base.html:7 .\templates\inventory\base.html:107
+#: .\templates\inventory\base.html:202
+msgid "Gestion de Stock"
+msgstr "إدارة المخزون"
+
+#: .\templates\inventory\base.html:116 .\templates\inventory\base.html:208
+msgid "Produits"
+msgstr "المنتجات"
+
+#: .\templates\inventory\base.html:122 .\templates\inventory\base.html:210
+msgid "Catégories"
+msgstr "الفئات"
+
+#: .\templates\inventory\base.html:129
+msgid "Ajouter produit"
+msgstr "إضافة منتج"
+
+#: .\templates\inventory\base.html:136
+msgid "Ajouter catégorie"
+msgstr "إضافة فئة"
+
+#: .\templates\inventory\base.html:153
+#: .\templates\inventory\user_profile.html:26
+#: .\templates\inventory\user_profile.html:90
+#: .\templates\inventory\user_profile_edit.html:26
+msgid "Superadmin"
+msgstr "سوبر أدمن"
+
+#: .\templates\inventory\base.html:155
+#: .\templates\inventory\user_profile.html:28
+#: .\templates\inventory\user_profile.html:92
+#: .\templates\inventory\user_profile_edit.html:28
+msgid "Admin"
+msgstr "مدير"
+
+#: .\templates\inventory\base.html:157
+#: .\templates\inventory\user_profile.html:30
+#: .\templates\inventory\user_profile.html:94
+#: .\templates\inventory\user_profile_edit.html:30
+msgid "Utilisateur"
+msgstr "مستخدم"
+
+#: .\templates\inventory\base.html:162 .\templates\inventory\base.html:212
+#: .\templates\inventory\user_change_password.html:15
+#: .\templates\inventory\user_history.html:15
+#: .\templates\inventory\user_profile.html:4
+#: .\templates\inventory\user_profile.html:36
+#: .\templates\inventory\user_profile_edit.html:36
+msgid "Mon profil"
+msgstr "ملفي الشخصي"
+
+#: .\templates\inventory\base.html:165
+#: .\templates\inventory\user_change_password.html:24
+#: .\templates\inventory\user_history.html:4
+#: .\templates\inventory\user_history.html:24
+#: .\templates\inventory\user_profile.html:45
+#: .\templates\inventory\user_profile_edit.html:45
+msgid "Mon historique"
+msgstr "تاريخي"
+
+#: .\templates\inventory\base.html:172
+#: .\templates\inventory\registration\logout.html:4
+#: .\templates\inventory\registration\logout.html:11
+#: .\templates\inventory\user_history.html:76
+msgid "Déconnexion"
+msgstr "تسجيل خروج"
+
+#: .\templates\inventory\base.html:203
+msgid ""
+"Application complète de gestion de stock des produits. Gérez facilement vos "
+"produits, catégories et stocks."
+msgstr "تطبيق كامل لإدارة المخزون. قم بإدارة منتجاتك وفئاتك ومخزونك بسهولة."
+
+#: .\templates\inventory\base.html:206
+msgid "Liens rapides"
+msgstr "روابط سريعة"
+
+#: .\templates\inventory\base.html:213
+msgid "Historique"
+msgstr "التاريخ"
+
+#: .\templates\inventory\base.html:217
+msgid "Suivez-moi"
+msgstr "تابعني"
+
+#: .\templates\inventory\base.html:226
+#: .\templates\inventory\registration\login.html:48
+msgid "Application de Gestion de Stock"
+msgstr "تطبيق إدارة المخزون"
+
+#: .\templates\inventory\category_confirm_delete.html:4
+#: .\templates\inventory\product_confirm_delete.html:4
+#: .\templates\inventory\product_detail.html:66
+msgid "Supprimer"
+msgstr "حذف"
+
+#: .\templates\inventory\category_confirm_delete.html:11
+#: .\templates\inventory\product_confirm_delete.html:11
+msgid "Confirmation de suppression"
+msgstr "تأكيد الحذف"
+
+#: .\templates\inventory\category_confirm_delete.html:14
+msgid "Êtes-vous sûr de vouloir supprimer la catégorie suivante ?"
+msgstr "هل أنت متأكد من حذف الفئة التالية؟"
+
+#: .\templates\inventory\category_confirm_delete.html:18
+#: .\templates\inventory\product_confirm_delete.html:19
+msgid "Cette action est irréversible"
+msgstr "هذا الإجراء لا رجعة فيه"
+
+#: .\templates\inventory\category_confirm_delete.html:24
+#: .\templates\inventory\category_form.html:33
+#: .\templates\inventory\product_confirm_delete.html:25
+#: .\templates\inventory\product_form.html:36
+#: .\templates\inventory\user_change_password.html:58
+#: .\templates\inventory\user_profile_edit.html:97
+msgid "Annuler"
+msgstr "إلغاء"
+
+#: .\templates\inventory\category_confirm_delete.html:27
+#: .\templates\inventory\product_confirm_delete.html:28
+msgid "Confirmer la suppression"
+msgstr "تأكيد الحذف"
+
+#: .\templates\inventory\category_form.html:36
+#: .\templates\inventory\product_form.html:39
+#: .\templates\inventory\user_profile_edit.html:100
+msgid "Enregistrer"
+msgstr "حفظ"
+
+#: .\templates\inventory\category_list.html:4
+#: .\templates\inventory\category_list.html:8
+msgid "Gestion des catégories"
+msgstr "إدارة الفئات"
+
+#: .\templates\inventory\category_list.html:10
+msgid "Nouvelle catégorie"
+msgstr "فئة جديدة"
+
+#: .\templates\inventory\category_list.html:22
+msgid "Nombre de produits"
+msgstr "عدد المنتجات"
+
+#: .\templates\inventory\category_list.html:23
+msgid "Date création"
+msgstr "تاريخ الإنشاء"
+
+#: .\templates\inventory\category_list.html:24
+msgid "Actions"
+msgstr "الإجراءات"
+
+#: .\templates\inventory\category_list.html:45
+msgid "Impossible de supprimer - catégorie contient des produits"
+msgstr "لا يمكن الحذف - الفئة تحتوي على منتجات"
+
+#: .\templates\inventory\category_list.html:53
+msgid "Aucune catégorie trouvée."
+msgstr "لا توجد فئات"
+
+#: .\templates\inventory\product_confirm_delete.html:14
+msgid "Êtes-vous sûr de vouloir supprimer le produit suivant ?"
+msgstr "هل أنت متأكد من حذف المنتج التالي؟"
+
+#: .\templates\inventory\product_confirm_delete.html:17
+#: .\templates\inventory\product_list.html:76
+#: .\templates\inventory\product_list.html:78
+msgid "Stock"
+msgstr "المخزون"
+
+#: .\templates\inventory\product_detail.html:10
+msgid "Retour à la liste"
+msgstr "العودة إلى القائمة"
+
+#: .\templates\inventory\product_detail.html:37
+msgid "Rupture de stock"
+msgstr "نفد المخزون"
+
+#: .\templates\inventory\product_detail.html:41
+msgid "Stock faible"
+msgstr "مخزون منخفض"
+
+#: .\templates\inventory\product_detail.html:41
+#: .\templates\inventory\product_detail.html:45
+msgid "unités"
+msgstr "وحدات"
+
+#: .\templates\inventory\product_detail.html:45
+msgid "En stock"
+msgstr "متوفر"
+
+#: .\templates\inventory\product_detail.html:54
+msgid "Créé le"
+msgstr "تم الإنشاء في"
+
+#: .\templates\inventory\product_detail.html:55
+msgid "Dernière modification"
+msgstr "آخر تعديل"
+
+#: .\templates\inventory\product_detail.html:63
+msgid "Modifier"
+msgstr "تعديل"
+
+#: .\templates\inventory\product_list.html:4
+#: .\templates\inventory\product_list.html:8
+msgid "Liste des produits"
+msgstr "قائمة المنتجات"
+
+#: .\templates\inventory\product_list.html:11
+msgid "Nouveau produit"
+msgstr "منتج جديد"
+
+#: .\templates\inventory\product_list.html:19
+#: .\templates\inventory\user_history.html:86
+msgid "Recherche"
+msgstr "بحث"
+
+#: .\templates\inventory\product_list.html:22
+msgid "Nom ou description..."
+msgstr "الاسم أو الوصف..."
+
+#: .\templates\inventory\product_list.html:28
+msgid "Toutes les catégories"
+msgstr "جميع الفئات"
+
+#: .\templates\inventory\product_list.html:37
+msgid "Trier par"
+msgstr "ترتيب حسب"
+
+#: .\templates\inventory\product_list.html:39
+msgid "Nom (A-Z)"
+msgstr "الاسم (أ-ي)"
+
+#: .\templates\inventory\product_list.html:40
+msgid "Prix (croissant)"
+msgstr "السعر (تصاعدي)"
+
+#: .\templates\inventory\product_list.html:41
+msgid "Prix (décroissant)"
+msgstr "السعر (تنازلي)"
+
+#: .\templates\inventory\product_list.html:42
+msgid "Stock (croissant)"
+msgstr "المخزون (تصاعدي)"
+
+#: .\templates\inventory\product_list.html:43
+msgid "Stock (décroissant)"
+msgstr "المخزون (تنازلي)"
+
+#: .\templates\inventory\product_list.html:48
+#: .\templates\inventory\user_history.html:51
+msgid "Filtrer"
+msgstr "تصفية"
+
+#: .\templates\inventory\product_list.html:74
+msgid "Rupture"
+msgstr "نفد"
+
+#: .\templates\inventory\product_list.html:82
+msgid "Détail"
+msgstr "تفاصيل"
+
+#: .\templates\inventory\product_list.html:92
+msgid "Page navigation"
+msgstr "تصفح الصفحات"
+
+#: .\templates\inventory\product_list.html:97
+#: .\templates\inventory\user_history.html:110
+msgid "Précédent"
+msgstr "السابق"
+
+#: .\templates\inventory\product_list.html:111
+#: .\templates\inventory\user_history.html:124
+msgid "Suivant"
+msgstr "التالي"
+
+#: .\templates\inventory\product_list.html:120
+msgid "Aucun produit trouvé."
+msgstr "لا توجد منتجات"
+
+#: .\templates\inventory\registration\login.html:4
+#: .\templates\inventory\registration\login.html:11
+#: .\templates\inventory\user_history.html:74
+msgid "Connexion"
+msgstr "تسجيل الدخول"
+
+#: .\templates\inventory\registration\login.html:16
+msgid "Nom d'utilisateur ou mot de passe incorrect."
+msgstr "اسم المستخدم أو كلمة المرور غير صحيحة"
+
+#: .\templates\inventory\registration\login.html:38
+msgid "Se connecter"
+msgstr "تسجيل الدخول"
+
+#: .\templates\inventory\registration\login.html:44
+msgid "Pas encore de compte"
+msgstr "ليس لديك حساب؟"
+
+#: .\templates\inventory\registration\login.html:44
+#: .\templates\inventory\registration\register.html:11
+msgid "Créer un compte"
+msgstr "إنشاء حساب"
+
+#: .\templates\inventory\registration\logout.html:14
+msgid "Vous avez été déconnecté avec succès."
+msgstr "تم تسجيل الخروج بنجاح"
+
+#: .\templates\inventory\registration\logout.html:16
+msgid "Se reconnecter"
+msgstr "تسجيل الدخول مرة أخرى"
+
+#: .\templates\inventory\registration\register.html:4
+msgid "Inscription"
+msgstr "تسجيل"
+
+#: .\templates\inventory\registration\register.html:36
+msgid "S'inscrire"
+msgstr "اشتراك"
+
+#: .\templates\inventory\registration\register.html:42
+msgid "Déjà un compte"
+msgstr "لديك حساب بالفعل؟"
+
+#: .\templates\inventory\registration\register.html:42
+msgid "Connectez-vous"
+msgstr "تسجيل الدخول"
+
+#: .\templates\inventory\user_change_password.html:4
+#: .\templates\inventory\user_change_password.html:21
+#: .\templates\inventory\user_change_password.html:33
+#: .\templates\inventory\user_history.html:21
+#: .\templates\inventory\user_profile.html:42
+#: .\templates\inventory\user_profile_edit.html:42
+msgid "Changer mon mot de passe"
+msgstr "تغيير كلمة المرور"
+
+#: .\templates\inventory\user_change_password.html:11
+#: .\templates\inventory\user_history.html:11
+#: .\templates\inventory\user_profile.html:11
+#: .\templates\inventory\user_profile_edit.html:11
+msgid "Menu"
+msgstr "القائمة"
+
+#: .\templates\inventory\user_change_password.html:18
+#: .\templates\inventory\user_history.html:18
+#: .\templates\inventory\user_profile.html:39
+#: .\templates\inventory\user_profile_edit.html:39
+#: .\templates\inventory\user_profile_edit.html:54
+msgid "Modifier mes informations"
+msgstr "تعديل معلوماتي"
+
+#: .\templates\inventory\user_change_password.html:61
+msgid "Changer le mot de passe"
+msgstr "تغيير كلمة المرور"
+
+#: .\templates\inventory\user_history.html:33
+msgid "Historique des actions"
+msgstr "سجل الإجراءات"
+
+#: .\templates\inventory\user_history.html:41
+msgid "Toutes les actions"
+msgstr "جميع الإجراءات"
+
+#: .\templates\inventory\user_history.html:62
+msgid "Date/Heure"
+msgstr "التاريخ/الوقت"
+
+#: .\templates\inventory\user_history.html:63
+msgid "Action"
+msgstr "الإجراء"
+
+#: .\templates\inventory\user_history.html:65
+msgid "IP"
+msgstr "IP"
+
+#: .\templates\inventory\user_history.html:78
+msgid "Création"
+msgstr "إنشاء"
+
+#: .\templates\inventory\user_history.html:80
+msgid "Modification"
+msgstr "تعديل"
+
+#: .\templates\inventory\user_history.html:82
+msgid "Suppression"
+msgstr "حذف"
+
+#: .\templates\inventory\user_history.html:84
+msgid "Consultation"
+msgstr "استشارة"
+
+#: .\templates\inventory\user_history.html:96
+msgid "Aucun historique trouvé"
+msgstr "لا يوجد سجل"
+
+#: .\templates\inventory\user_profile.html:54
+msgid "Informations personnelles"
+msgstr "معلومات شخصية"
+
+#: .\templates\inventory\user_profile.html:87
+msgid "Rôle"
+msgstr "الدور"
+
+#: .\templates\inventory\user_profile.html:99
+msgid "Date d'inscription"
+msgstr "تاريخ التسجيل"
+
+#: .\templates\inventory\user_profile.html:103
+msgid "Dernière connexion"
+msgstr "آخر اتصال"
+
+#: .\templates\inventory\user_profile_edit.html:4
+msgid "Modifier mon profil"
+msgstr "تعديل ملفي الشخصي"
+
+#: .\templates\inventory\user_profile_edit.html:60
+msgid "Informations du compte"
+msgstr "معلومات الحساب"
+
+#: .\templates\inventory\user_profile_edit.html:77
+msgid "Photo de profil et informations supplémentaires"
+msgstr "صورة الملف الشخصي ومعلومات إضافية"

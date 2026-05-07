@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+from django.utils.translation import gettext_lazy as _
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -16,17 +17,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'inventory',
+    'inventory',  # Votre application
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'inventory.middleware.AutoTranslateMiddleware',  # ← COMMENTÉ (fichier inexistant)
 ]
 
 ROOT_URLCONF = 'gestion_stock.urls'
@@ -42,6 +45,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.i18n',
             ],
         },
     },
@@ -71,11 +75,41 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'fr-fr'
-TIME_ZONE = 'Africa/Casablanca'
+# ============ CONFIGURATION LANGUES ============
+# Langues supportées
+LANGUAGES = [
+    ('fr', _('Français')),
+    ('en', _('English')),
+    ('ar', _('العربية')),
+    ('zh-hans', _('中文 (简体)')),  # Chinois simplifié
+    ('zgh', _('ⵜⴰⵎⴰⵣⵉⵖⵜ')),  # Tamazight (traduction manuelle)
+]
+
+# Langue par défaut
+LANGUAGE_CODE = 'fr'
+
+# Activer l'internationalisation
 USE_I18N = True
+USE_L10N = True
+
+# Fuseau horaire
+TIME_ZONE = 'Africa/Casablanca'
 USE_TZ = True
 
+# Chemin des fichiers de traduction (gardé pour Tamazight)
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
+
+# ============ CONFIGURATION EMAIL ============
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'hinimdoumorsia@gmail.com' 
+EMAIL_HOST_PASSWORD = 'gssa mvhj zswt ykuc'
+
+# ============ CONFIGURATION STATIC & MEDIA ============
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
@@ -85,14 +119,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# ============ CONFIGURATION AUTH ============
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'product_list'
 LOGOUT_REDIRECT_URL = 'login'
-
-# ============ CONFIGURATION EMAIL ENVOI REEL ============
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = EMAIL_HOST_USER 
-EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD 
